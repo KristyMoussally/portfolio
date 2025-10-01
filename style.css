@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("./medias/font/Roboto-Regular.ttf") format("openType");
+}
+
+:root {
+  --black: #11100e;
+  --white: #fcfbff;
+  --size: medium;
+}
+
+body {
+  background-color: var(--black);
+  color: var(--white);
+  font-family: "Roboto";
+}
+
+footer {
+  background-image: linear-gradient(red, #000000);
+  display: none;
+}
