@@ -1,13 +1,27 @@
 const cursorAnim = document.querySelector(".cursor");
 
-// position of the div to the cursor
-document.addEventListener("mousemove", (e) => {
-  let x = e.clientX;
-  let y = e.clientY;
-  cursorAnim.style.left = x + "px";
-  cursorAnim.style.top = y + "px";
+gsap.set(".cursor", { xPercent: -50, yPercent: -50 });
+
+let xTo = gsap.quickTo(".cursor", "x", { duration: 0.6, ease: "power1" }),
+  yTo = gsap.quickTo(".cursor", "y", { duration: 0.6, ease: "power1" });
+
+window.addEventListener("mousemove", (e) => {
+  xTo(e.clientX);
+  yTo(e.clientY);
 });
 
-cursorAnim.addEventListener("onclick", () => {
-  cursorAnim.style.scale = "2";
-});
+// Title Portfolio
+let titleAnim = gsap.timeline();
+titleAnim
+  .fromTo(
+    ".prenom",
+    { y: 400, x: 250, opacity: "0%", duration: 5 },
+    { y: 300, opacity: "100%" },
+    1
+  )
+  .fromTo(
+    ".nom",
+    { y: 500, x: 250, opacity: "0%", duration: 5 },
+    { y: 400, opacity: "100%" },
+    "<0.5"
+  );

@@ -1,16 +1,22 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  cursor: none;
-  overflow: hidden;
+  cursor: default;
 }
 
 @font-face {
   font-family: "Roboto";
-  src: url("./medias/font/Roboto-Regular.ttf") format("openType");
+  src: url("./medias/font/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Stretch";
+  src: url("./medias/font/StretchPro.otf") format("opentype");
 }
 
 :root {
+  --title: "Stretch";
+  --text: "Roboto";
   --void: #0000;
   --black: #000;
   --main: #11100e;
@@ -22,7 +28,7 @@
 body {
   background-color: var(--main);
   color: var(--white);
-  font-family: "Roboto";
+  font-family: var(--text);
 }
 
 /* Navigation Bar */
@@ -36,7 +42,7 @@ body {
   height: 12%;
   display: grid;
   transition: height 1s;
-  z-index: 1;
+  z-index: 2;
 }
 
 .nav:hover {
@@ -63,22 +69,42 @@ body {
   color: var(--gold);
 }
 
-/* Section Hero */
-.hero {
+/* SECTION PAGES */
+
+section {
   width: 100%;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-.img-hero {
-  background-image: url(./medias/images/horse_3.jpg);
-  background-size: cover;
+
+img {
   width: 100%;
-  height: 100%;
+  height: 100vh;
+}
+
+/* Section Hero */
+
+h1 {
+  font-family: var(--title);
+  font-size: 6em;
+  position: absolute;
+}
+
+.hero-gradient {
+  background-image: linear-gradient(var(--void), 50%, rgba(202, 104, 0, 0.99));
+  width: 100%;
+  height: 100vh;
+  opacity: 25%;
+  position: absolute;
 }
 
 /* Section Footer */
 
 footer {
   background-image: linear-gradient(var(--void), var(--black));
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -86,9 +112,10 @@ footer {
 /* cursor style */
 .cursor {
   position: absolute;
+  mix-blend-mode: difference;
   width: 25px;
   height: 25px;
-  border: 3px solid #fff;
+  border: 2px solid #fff;
   border-radius: 50%;
   animation-duration: 2s;
   animation-name: cursor;
@@ -96,7 +123,8 @@ footer {
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-play-state: running;
-  z-index: 1;
+  z-index: 4;
+  transition: width, height, border 1;
 }
 
 @keyframes cursor {
@@ -112,4 +140,10 @@ footer {
   100% {
     border-color: rgb(255, 251, 0);
   }
+}
+
+a:hover + .cursor {
+  width: 50px;
+  height: 50px;
+  border: 5px;
 }
