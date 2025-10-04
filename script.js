@@ -1,15 +1,13 @@
 const cursorAnim = document.querySelector(".cursor");
 
 // position of the div to the cursor
-const positionElement = (e) => {
-  const mouseY = e.clientY;
-  const mouseX = e.clientX;
-
-  cursorAnim.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
-};
+document.addEventListener("mousemove", (e) => {
+  let x = e.clientX;
+  let y = e.clientY;
+  cursorAnim.style.left = x + "px";
+  cursorAnim.style.top = y + "px";
+});
 
 cursorAnim.addEventListener("onclick", () => {
   cursorAnim.style.scale = "2";
 });
-
-window.addEventListener("mousemove", positionElement);
