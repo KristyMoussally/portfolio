@@ -73,6 +73,10 @@ h4 {
   font-family: var(--title);
 }
 
+p {
+  line-height: 1.6;
+}
+
 /*-------------------------------------------------------------------------------------
 
  # BAR DE NAVIGATION
@@ -165,7 +169,7 @@ h1 {
   height: 500px;
 }
 
-h2 {
+.projects h2 {
   font-size: 2em;
   letter-spacing: 1rem;
   color: var(--white);
@@ -257,6 +261,48 @@ h3 {
   background-position: 50%;
 }
 
+/*-------------------------------------------------------------------------------------
+
+ # À PROPOS
+ 
+ -------------------------------------------------------------------------------------*/
+
+.about {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.portrait {
+  position: relative;
+  right: 5%;
+  width: 60vw;
+  height: 70vh;
+  background-image: url(./medias/images/heart_side_bottom.jpg);
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+
+.me {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 20%;
+}
+
+.about-me {
+  width: 50%;
+}
+
+.me h2 {
+  letter-spacing: 0.6rem;
+}
+
+.me a {
+  width: 18%;
+  font-weight: bold;
+}
 /*-------------------------------------------------------------------------------------
 
  # FOOTER

@@ -21,6 +21,9 @@ window.addEventListener("mousemove", (e) => {
  # NOM PORTFOLIO
  
  -------------------------------------------------------------------------------------*/
+
+const titleScreenFirstName = document.querySelector(".prenom");
+
 let titleAnim = gsap.timeline();
 titleAnim
   .fromTo(
@@ -35,6 +38,17 @@ titleAnim
     { y: 400, opacity: "100%" },
     "<0.5"
   );
+
+const debutAnim = gsap.timeline({
+  scrollTrigger: {
+    pin: !0,
+    pinSpacing: !0,
+    scrub: 1,
+    start: "top top",
+    end: "bottom top",
+    trigger: "titleScreenFirstName",
+  },
+});
 
 /*-------------------------------------------------------------------------------------
 
