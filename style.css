@@ -1,8 +1,8 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  cursor: default;
-}
+/*-------------------------------------------------------------------------------------# 
+
+FONT_FACE
+
+--------------------------------------------------------------------------------------*/
 
 @font-face {
   font-family: "Roboto";
@@ -10,12 +10,18 @@
 }
 
 @font-face {
-  font-family: "Stretch";
-  src: url("./medias/font/StretchPro.otf") format("opentype");
+  font-family: "Akira";
+  src: url("./medias/font/Akira.otf") format("opentype");
 }
 
+/*-------------------------------------------------------------------------------------
+
+ # ROOT
+ 
+ -------------------------------------------------------------------------------------*/
+
 :root {
-  --title: "Stretch";
+  --title: "Akira";
   --text: "Roboto";
   --void: #0000;
   --black: #000;
@@ -25,13 +31,44 @@
   --gradient: linear-gradient(var(--black), var(--void));
 }
 
+/*-------------------------------------------------------------------------------------
+
+ # STYLE GÉNÉRAUX
+ 
+ -------------------------------------------------------------------------------------*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  cursor: default;
+}
+
 body {
   background-color: var(--main);
   color: var(--white);
   font-family: var(--text);
+  height: 100%;
+  overflow-x: hidden;
 }
 
-/* Navigation Bar */
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100vh;
+}
+
+/*-------------------------------------------------------------------------------------
+
+ # BAR DE NAVIGATION
+ 
+ -------------------------------------------------------------------------------------*/
 
 .nav {
   background-image: var(--gradient);
@@ -69,27 +106,18 @@ body {
   color: var(--gold);
 }
 
-/* SECTION PAGES */
+/*-------------------------------------------------------------------------------------
 
-section {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-img {
-  width: 100%;
-  height: 100vh;
-}
-
-/* Section Hero */
+ # HÉRO
+ 
+ -------------------------------------------------------------------------------------*/
 
 h1 {
   font-family: var(--title);
   font-size: 6em;
   position: absolute;
+  letter-spacing: 1rem;
+  z-index: 3;
 }
 
 .hero-gradient {
@@ -98,9 +126,24 @@ h1 {
   height: 100vh;
   opacity: 25%;
   position: absolute;
+  z-index: 1;
 }
 
-/* Section Footer */
+.link-adress {
+  position: absolute;
+  color: var(--white);
+  bottom: 0;
+  right: 0;
+  margin: 0 2.5% 1% 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*-------------------------------------------------------------------------------------
+
+ # FOOTER
+ 
+ -------------------------------------------------------------------------------------*/
 
 footer {
   background-image: linear-gradient(var(--void), var(--black));
@@ -109,7 +152,11 @@ footer {
   width: 100%;
 }
 
-/* cursor style */
+/*-------------------------------------------------------------------------------------
+
+ # CURSOR
+ 
+ -------------------------------------------------------------------------------------*/
 .cursor {
   position: absolute;
   mix-blend-mode: difference;
@@ -123,8 +170,8 @@ footer {
   animation-direction: alternate;
   animation-iteration-count: infinite;
   animation-play-state: running;
-  z-index: 4;
-  transition: width, height, border 1;
+  z-index: 6;
+  transition: width 1s, height 1s, border 1s;
 }
 
 @keyframes cursor {
@@ -142,8 +189,16 @@ footer {
   }
 }
 
-a:hover + .cursor {
+body:has(.nav:hover) .cursor {
+  transition: width 1s, height 1s, border 1s;
   width: 50px;
   height: 50px;
-  border: 5px;
+  border: 5px solid;
+}
+
+body:has(h1:hover) .cursor {
+  transition: width 1s, height 1s, border 1s;
+  width: 50px;
+  height: 50px;
+  border: 5px solid;
 }
