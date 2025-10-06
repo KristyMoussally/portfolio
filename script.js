@@ -60,6 +60,21 @@ titleAnimScreen.fromTo(
  
  -------------------------------------------------------------------------------------*/
 
+ const myProjects = gsap.timeline({
+  scrollTrigger: {
+    pin: !0,
+    pinSpacing: !0,
+    scrub: !0,
+    markers: true,
+    start: "top top",
+    end: "bottom top",
+    trigger: ".projects",
+  },
+ })
+
+ myProjects.fromTo("#projet", {y: 500, opacity:"0%"}, {y: 0 ,opacity: "100%"}, 1);
+ myProjects.fromTo(".swiper", {x: 500, opacity:"0%"}, {x: 0 ,opacity: "100%"}, ">0");
+/*
 gsap.to(".projects", {
   scrollTrigger: {
     pin: true,
@@ -71,7 +86,7 @@ gsap.to(".projects", {
     trigger: ".projects",
   },
 });
-
+*/
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
