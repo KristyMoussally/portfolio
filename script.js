@@ -22,33 +22,37 @@ window.addEventListener("mousemove", (e) => {
  
  -------------------------------------------------------------------------------------*/
 
-const titleScreenFirstName = document.querySelector(".prenom");
+gsap.registerPlugin(ScrollTrigger);
 
-let titleAnim = gsap.timeline();
-titleAnim
-  .fromTo(
-    ".prenom",
-    { y: 400, x: 250, opacity: "0%", duration: 5 },
-    { y: 300, opacity: "100%" },
-    1
-  )
-  .fromTo(
-    ".nom",
-    { y: 500, x: 250, opacity: "0%", duration: 5 },
-    { y: 400, opacity: "100%" },
-    "<0.5"
-  );
-
-const debutAnim = gsap.timeline({
+const titleAnimScreen = gsap.timeline({
   scrollTrigger: {
     pin: !0,
     pinSpacing: !0,
-    scrub: 1,
+    scrub: !0,
+    markers: true,
     start: "top top",
-    end: "bottom top",
-    trigger: "titleScreenFirstName",
+    end: "50% top",
+    trigger: ".hero",
   },
 });
+titleAnimScreen.fromTo(
+  ".hero-img",
+  { backgroundPosition: "0% 0%", ease: "power1.inOut", duration: 8 },
+  { backgroundPosition: "50% 100%", ease: "power1.inOut" },
+  0
+);
+titleAnimScreen.fromTo(
+  ".prenom",
+  { y: 400, x: 250, opacity: "0%", duration: 5 },
+  { y: 300, opacity: "100%" },
+  1
+);
+titleAnimScreen.fromTo(
+  ".nom",
+  { y: 500, x: 250, opacity: "0%", duration: 5 },
+  { y: 400, opacity: "100%" },
+  "<0.5"
+);
 
 /*-------------------------------------------------------------------------------------
 
@@ -56,8 +60,69 @@ const debutAnim = gsap.timeline({
  
  -------------------------------------------------------------------------------------*/
 
+gsap.to(".projects", {
+  scrollTrigger: {
+    pin: true,
+    pinSpacing: 0,
+    scrub: 1,
+    markers: false,
+    start: "top top",
+    end: "bottom top",
+    trigger: ".projects",
+  },
+});
+
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 3,
+  spaceBetween: 15,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
 });
+
+/*-------------------------------------------------------------------------------------
+
+ # ABOUT ME
+ 
+ -------------------------------------------------------------------------------------*/
+
+const aboutMe = gsap.timeline({
+  scrollTrigger: {
+    pin: !0,
+    pinSpacing: !0,
+    scrub: !0,
+    markers: true,
+    start: "top top",
+    end: "bottom top",
+    trigger: ".about",
+  },
+});
+
+aboutMe.fromTo(
+  "#titleMe",
+  { y: -50, opacity: "0%", duration: 5 },
+  { y: 0, opacity: "100%" },
+  1
+);
+aboutMe.fromTo(
+  "#learnMore",
+  { y: -50, opacity: "0%", duration: 5 },
+  { y: 0, opacity: "100%" },
+  "<0.5"
+);
+aboutMe.fromTo(
+  ".about-me",
+  { y: -50, opacity: "0%", duration: 5 },
+  { y: 0, opacity: "100%" },
+  "<0.5"
+);
+
+aboutMe.fromTo(
+  ".portrait",
+  { x: 500, backgroundPosition: "0% 100%", opacity: "0%", duration: 8 },
+  { x: 0, backgroundPosition: "50% 100%", opacity: "100%" },
+  2
+);
