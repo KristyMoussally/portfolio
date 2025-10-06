@@ -43,14 +43,14 @@ titleAnimScreen.fromTo(
 );
 titleAnimScreen.fromTo(
   ".prenom",
-  { y: 400, x: 250, opacity: "0%", duration: 5 },
-  { y: 300, opacity: "100%" },
+  { y: 500, x: 250, opacity: "0%", duration: 5 },
+  { y: 400, opacity: "100%" },
   1
 );
 titleAnimScreen.fromTo(
   ".nom",
-  { y: 500, x: 250, opacity: "0%", duration: 5 },
-  { y: 400, opacity: "100%" },
+  { y: 600, x: 250, opacity: "0%", duration: 5 },
+  { y: 500, opacity: "100%" },
   "<0.5"
 );
 
