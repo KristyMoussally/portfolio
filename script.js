@@ -24,6 +24,19 @@ window.addEventListener("mousemove", (e) => {
 
 gsap.registerPlugin(ScrollTrigger);
 
+gsap.fromTo(
+  ".prenom",
+  { y: 900, x: 250, opacity: "0%", duration: 5 },
+  { y: 500, opacity: "100%" },
+  1
+);
+gsap.fromTo(
+  ".nom",
+  { y: 900, x: 250, opacity: "0%", duration: 5 },
+  { y: 700, opacity: "100%" },
+  "<0.5"
+);
+
 const titleAnimScreen = gsap.timeline({
   scrollTrigger: {
     pin: !0,
@@ -41,18 +54,10 @@ titleAnimScreen.fromTo(
   { backgroundPosition: "50% 100%", ease: "power1.inOut" },
   0
 );
-titleAnimScreen.fromTo(
-  ".prenom",
-  { y: 500, x: 250, opacity: "0%", duration: 5 },
-  { y: 400, opacity: "100%" },
-  1
-);
-titleAnimScreen.fromTo(
-  ".nom",
-  { y: 600, x: 250, opacity: "0%", duration: 5 },
-  { y: 500, opacity: "100%" },
-  "<0.5"
-);
+
+titleAnimScreen.fromTo(".prenom", { y: 500 }, { y: -100 }, 0);
+
+titleAnimScreen.fromTo(".nom", { y: 700,  }, { y: -100 },  0.1);
 
 /*-------------------------------------------------------------------------------------
 
@@ -60,7 +65,7 @@ titleAnimScreen.fromTo(
  
  -------------------------------------------------------------------------------------*/
 
- const myProjects = gsap.timeline({
+const myProjects = gsap.timeline({
   scrollTrigger: {
     pin: !0,
     pinSpacing: !0,
@@ -70,32 +75,37 @@ titleAnimScreen.fromTo(
     end: "bottom top",
     trigger: ".projects",
   },
- })
-
- myProjects.fromTo("#projet", {y: 500, opacity:"0%"}, {y: 0 ,opacity: "100%"}, 1);
- myProjects.fromTo(".swiper", {x: 500, opacity:"0%"}, {x: 0 ,opacity: "100%"}, ">0");
-/*
-gsap.to(".projects", {
-  scrollTrigger: {
-    pin: true,
-    pinSpacing: 0,
-    scrub: 1,
-    markers: false,
-    start: "top top",
-    end: "bottom top",
-    trigger: ".projects",
-  },
 });
-*/
+
+myProjects.fromTo(
+  "#projet",
+  { y: 500, opacity: "0%" },
+  { y: 0, opacity: "100%" },
+  0
+);
+myProjects.fromTo(
+  ".swiper",
+  { x: 500, opacity: "0%" },
+  { x: 0, opacity: "100%" },
+  ">0"
+);
+
+myProjects.fromTo(
+  ".carroussel",
+  { x: 500},
+  { x: 0 },
+">0"
+);
+
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 3,
-  spaceBetween: 15,
+  spaceBetween: 15,/*
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-  },
+  },*/
 });
 
 /*-------------------------------------------------------------------------------------
