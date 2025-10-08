@@ -26,14 +26,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(
   ".prenom",
-  { y: 900, x: 250, opacity: "0%", duration: 5 },
-  { y: 500, opacity: "100%" },
-  1
+  { y: "800%", x: 250, opacity: "0%", duration: 5 },
+  { y: "200%", opacity: "100%" },
+  0.5
 );
 gsap.fromTo(
   ".nom",
-  { y: 900, x: 250, opacity: "0%", duration: 5 },
-  { y: 700, opacity: "100%" },
+  { y: "800%", x: 250, opacity: "0%", duration: 5 },
+  { y: "400%", opacity: "100%" },
   "<0.5"
 );
 
@@ -41,7 +41,7 @@ const titleAnimScreen = gsap.timeline({
   scrollTrigger: {
     pin: !0,
     pinSpacing: !0,
-    scrub: !0,
+    scrub: 1,
     markers: true,
     start: "top top",
     end: "50% top",
@@ -55,9 +55,9 @@ titleAnimScreen.fromTo(
   0
 );
 
-titleAnimScreen.fromTo(".prenom", { y: 500 }, { y: -100 }, 0);
+titleAnimScreen.fromTo(".prenom", { y: "200%" }, { y: -100 }, 0);
 
-titleAnimScreen.fromTo(".nom", { y: 700,  }, { y: -100 },  0.1);
+titleAnimScreen.fromTo(".nom", { y: "400%" }, { y: -100 }, 0.02);
 
 /*-------------------------------------------------------------------------------------
 
@@ -69,7 +69,7 @@ const myProjects = gsap.timeline({
   scrollTrigger: {
     pin: !0,
     pinSpacing: !0,
-    scrub: !0,
+    scrub: 1,
     markers: true,
     start: "top top",
     end: "bottom top",
@@ -90,22 +90,17 @@ myProjects.fromTo(
   ">0"
 );
 
-myProjects.fromTo(
-  ".carroussel",
-  { x: 500},
-  { x: 0 },
-">0"
-);
+myProjects.fromTo(".carroussel", { x: 500 }, { x: 0 }, ">0");
 
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 3,
-  spaceBetween: 15,/*
+  spaceBetween: 15 /*
   autoplay: {
     delay: 2500,
     disableOnInteraction: false,
-  },*/
+  },*/,
 });
 
 /*-------------------------------------------------------------------------------------
@@ -118,36 +113,37 @@ const aboutMe = gsap.timeline({
   scrollTrigger: {
     pin: !0,
     pinSpacing: !0,
-    scrub: !0,
+    scrub: 1,
     markers: true,
     start: "top top",
     end: "bottom top",
     trigger: ".about",
+    toggleActions: "play complete",
   },
 });
-
-aboutMe.fromTo(
-  "#titleMe",
-  { y: -50, opacity: "0%", duration: 5 },
-  { y: 0, opacity: "100%" },
-  1
-);
-aboutMe.fromTo(
-  "#learnMore",
-  { y: -50, opacity: "0%", duration: 5 },
-  { y: 0, opacity: "100%" },
-  "<0.5"
-);
+aboutMe.pause(),
+  aboutMe.fromTo(
+    "#titleMe",
+    { y: -50, opacity: "0%", duration: 5 },
+    { y: 0, opacity: "100%" }
+  );
 aboutMe.fromTo(
   ".about-me",
   { y: -50, opacity: "0%", duration: 5 },
   { y: 0, opacity: "100%" },
   "<0.5"
 );
-
 aboutMe.fromTo(
   ".portrait",
   { x: 500, backgroundPosition: "0% 100%", opacity: "0%", duration: 8 },
   { x: 0, backgroundPosition: "50% 100%", opacity: "100%" },
-  2
+  "<0.5"
 );
+aboutMe
+  .fromTo(
+    "#learnMore",
+    { y: -50, opacity: "0%", duration: 5 },
+    { y: 0, opacity: "100%" },
+    "<0.5"
+  )
+  .paused(!0);
