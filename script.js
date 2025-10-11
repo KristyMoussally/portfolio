@@ -3,7 +3,7 @@
  # CURSOR
  
  -------------------------------------------------------------------------------------*/
-
+/*
 const cursorAnim = document.querySelector(".cursor");
 
 gsap.set(".cursor", { xPercent: -50, yPercent: -50 });
@@ -14,7 +14,7 @@ let xTo = gsap.quickTo(".cursor", "x", { duration: 0.6, ease: "power1" }),
 window.addEventListener("mousemove", (e) => {
   xTo(e.clientX);
   yTo(e.clientY);
-});
+});*/
 
 /*-------------------------------------------------------------------------------------
 
@@ -44,7 +44,7 @@ const titleAnimScreen = gsap.timeline({
     scrub: 1,
     markers: true,
     start: "top top",
-    end: "50% top",
+    end: "bottom top",
     trigger: ".hero",
   },
 });
@@ -134,19 +134,41 @@ aboutMe.fromTo(
   "<0.5"
 );
 aboutMe.fromTo(
+  "#learnMore",
+  { y: -50, opacity: "0%", duration: 5 },
+  { y: 0, opacity: "100%" },
+  "<0.5"
+);
+aboutMe.fromTo(
+  "#l1",
+  { y: -50, opacity: "0%", ease: "power2" },
+  { y: 0, opacity: "100%" },
+  "<0.5"
+);
+aboutMe.fromTo(
+  "#l2",
+  { y: -50, opacity: "0%", ease: "power2" },
+  { y: 0, opacity: "100%" },
+  "<0.5"
+);
+aboutMe.fromTo(
+  "#l3",
+  { y: -50, opacity: "0%", ease: "power2" },
+  { y: 0, opacity: "100%" },
+  "<0.5"
+);
+aboutMe.fromTo(
+  "#l4",
+  { y: -50, opacity: "0%", ease: "power2" },
+  { y: 0, opacity: "100%" },
+  "<0.5"
+);
+aboutMe.fromTo(
   ".portrait",
   { x: 500, backgroundPosition: "0% 100%", opacity: "0%", duration: 8 },
   { x: 0, backgroundPosition: "50% 100%", opacity: "100%" },
-  "<0.5"
+  1
 );
-aboutMe
-  .fromTo(
-    "#learnMore",
-    { y: -50, opacity: "0%", duration: 5 },
-    { y: 0, opacity: "100%" },
-    "<0.5"
-  )
-  .paused(!0);
 
 /*-------------------------------------------------------------------------------------
 
