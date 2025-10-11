@@ -4,10 +4,69 @@
  
  -------------------------------------------------------------------------------------*/
 
-.category{
-    display: grid;
+#categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+#categories a {
+  text-decoration: none;
+  list-style: none;
+  color: var(--white);
+  font-family: var(--title);
+  letter-spacing: 3px;
+}
+
+.category {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.file {
+  display: flex;
+  width: 30vw;
+  height: 35vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s, box-shadow 0.5s;
+}
+
+.file:hover {
+  transform: scale(1.1);
+  box-shadow: var(--black) 0px 15px 10px;
+}
+
+#ill {
+  background-image: url(./medias/images/horse_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#anim {
+  background-image: url(./medias/images/cliffs.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#esp {
+  background-image: url(./medias/images/tunnel_01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#son {
+  background-image: url(./medias/images/rendu_finale_05.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 /*-------------------------------------------------------------------------------------
 
@@ -15,27 +74,17 @@
  
  -------------------------------------------------------------------------------------*/
 
-
-
-
-
 /*-------------------------------------------------------------------------------------
 
  # ANIMATION 2D & MONTAGE
  
  -------------------------------------------------------------------------------------*/
 
-
-
-
 /*-------------------------------------------------------------------------------------
 
  # ESPACE 3D
  
  -------------------------------------------------------------------------------------*/
-
-
-
 
 /*-------------------------------------------------------------------------------------
 
