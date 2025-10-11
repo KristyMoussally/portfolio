@@ -26,14 +26,14 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(
   ".prenom",
-  { y: "800%", x: 250, opacity: "0%", duration: 5 },
-  { y: "200%", opacity: "100%" },
+  { y: "100vh", x: 250, opacity: "0%", duration: 5 },
+  { y: "35vh", opacity: "100%" },
   0.5
 );
 gsap.fromTo(
   ".nom",
-  { y: "800%", x: 250, opacity: "0%", duration: 5 },
-  { y: "400%", opacity: "100%" },
+  { y: "100vh", x: 250, opacity: "0%", duration: 5 },
+  { y: "60vh", opacity: "100%" },
   "<0.5"
 );
 
@@ -55,9 +55,9 @@ titleAnimScreen.fromTo(
   0
 );
 
-titleAnimScreen.fromTo(".prenom", { y: "200%" }, { y: -100 }, 0);
+titleAnimScreen.fromTo(".prenom", { y: "35vh" }, { y: "-100vh" }, 0);
 
-titleAnimScreen.fromTo(".nom", { y: "400%" }, { y: -100 }, 0.02);
+titleAnimScreen.fromTo(".nom", { y: "60vh" }, { y: "-20vh" }, 0.02);
 
 /*-------------------------------------------------------------------------------------
 
