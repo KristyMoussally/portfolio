@@ -41,7 +41,7 @@
 }
 
 #ill {
-  background-image: url(./medias/images/horse_1.jpg);
+  background-image: url(./medias/images/illustration/flood.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -66,6 +66,18 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+@media (max-width: 425px) {
+  .category {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  .file {
+    width: 70vw;
+    height: 35vh;
+  }
 }
 
 /*-------------------------------------------------------------------------------------

@@ -118,6 +118,29 @@ p {
   display: none;
 }
 
+.logo {
+  display: none;
+}
+
+.logo-link {
+  color: var(--white);
+  list-style: none;
+  text-decoration: none;
+}
+
+@media (max-width: 425px) {
+  .logo {
+    display: block;
+  }
+
+  .Burger {
+    display: block;
+  }
+  .link {
+    display: none;
+  }
+}
+
 /*-------------------------------------------------------------------------------------
 
  # HÉRO
@@ -426,4 +449,21 @@ hr {
 
 .copyright {
   font-size: 0.7em;
+}
+
+.f {
+  list-style: none;
+  color: var(--white);
+  text-decoration: none;
+  transition: color 1s;
+}
+
+.f:hover {
+  color: var(--gold);
+}
+
+@media (max-width: 425px) {
+  .copyright {
+    font-size: 0.4em;
+  }
 }
