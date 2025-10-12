@@ -182,6 +182,24 @@ aboutMe.fromTo(
  
  -------------------------------------------------------------------------------------*/
 
+const dessinPop = gsap.timeline({
+  scrollTrigger: {
+    pin: !0,
+    pinSpacing: !0,
+    scrub: 1,
+    markers: true,
+    start: "top top",
+    end: "bottom top",
+    trigger: "#gallery",
+  },
+});
+dessinPop.fromTo(
+  ".dessins",
+  { y: -50, opacity: "0%" },
+  { y: 0, opacity: "100%" },
+  "<0.5"
+);
+
 /*-------------------------------------------------------------------------------------
 
  # PAGE CONTACT

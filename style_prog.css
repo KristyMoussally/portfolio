@@ -74,6 +74,38 @@
  
  -------------------------------------------------------------------------------------*/
 
+#gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150vh;
+}
+
+#gallery h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.illustration {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 15px;
+  align-items: center;
+  height: 120vh;
+}
+
+.dessins {
+  width: 100%;
+  height: 30vh;
+  transition: transform 1s, box-shadow 1s;
+}
+
+.dessins:hover {
+  transform: scale(1.1);
+  box-shadow: var(--black) 0px 15px 10px;
+}
+
 /*-------------------------------------------------------------------------------------
 
  # ANIMATION 2D & MONTAGE
