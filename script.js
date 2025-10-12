@@ -1,23 +1,5 @@
 /*-------------------------------------------------------------------------------------
 
- # CURSOR
- 
- -------------------------------------------------------------------------------------*/
-/*
-const cursorAnim = document.querySelector(".cursor");
-
-gsap.set(".cursor", { xPercent: -50, yPercent: -50 });
-
-let xTo = gsap.quickTo(".cursor", "x", { duration: 0.6, ease: "power1" }),
-  yTo = gsap.quickTo(".cursor", "y", { duration: 0.6, ease: "power1" });
-
-window.addEventListener("mousemove", (e) => {
-  xTo(e.clientX);
-  yTo(e.clientY);
-});*/
-
-/*-------------------------------------------------------------------------------------
-
  # NOM PORTFOLIO
  
  -------------------------------------------------------------------------------------*/
@@ -102,11 +84,7 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 3,
-  spaceBetween: 15 /*
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },*/,
+  spaceBetween: 15,
 });
 
 /*-------------------------------------------------------------------------------------
@@ -181,24 +159,6 @@ aboutMe.fromTo(
  # PAGE PROJETS
  
  -------------------------------------------------------------------------------------*/
-
-const dessinPop = gsap.timeline({
-  scrollTrigger: {
-    pin: !0,
-    pinSpacing: !0,
-    scrub: 1,
-    markers: true,
-    start: "top top",
-    end: "bottom top",
-    trigger: "#gallery",
-  },
-});
-dessinPop.fromTo(
-  ".dessins",
-  { y: -50, opacity: "0%" },
-  { y: 0, opacity: "100%" },
-  "<0.5"
-);
 
 /*-------------------------------------------------------------------------------------
 
