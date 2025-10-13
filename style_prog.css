@@ -48,7 +48,7 @@
 }
 
 #anim {
-  background-image: url(./medias/images/cliffs.jpg);
+  background-image: url(./medias/images/studio.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -62,10 +62,11 @@
 }
 
 #son {
-  background-image: url(./medias/images/rendu_finale_05.jpg);
+  background-image: url(./medias/images/sonore.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
 }
 
 @media (max-width: 425px) {
@@ -74,11 +75,37 @@
     gap: 15px;
   }
 
+  #categories{
+  overflow-x: hidden;
+  overflow-y: visible;
+    height: 50%;
+  }
+
   .file {
-    width: 70vw;
+    width: 95vw;
     height: 35vh;
   }
 }
+
+@media (max-width: 768px) {
+  .category {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  #categories{
+  overflow-x: hidden;
+  overflow-y: visible;
+  height: 100%;
+  margin-top: 150px;
+  }
+
+  .file {
+    width: 95vw;
+    height: 35vh;
+  }
+}
+
 
 /*-------------------------------------------------------------------------------------
 
@@ -87,6 +114,7 @@
  -------------------------------------------------------------------------------------*/
 
 #gallery {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -99,6 +127,7 @@
 }
 
 #gallery h4 {
+  position: relative;
   align-self: center;
 }
 
@@ -157,9 +186,27 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 12px;
   }
+  
 
   #gallery {
-    height: 150vh;
+    overflow-x: hidden;
+  }
+
+  .dessins{
+    width: 150vw;
+    height: 30vh;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .illustration {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
+    height: 100%;
+  }
+  #gallery {
+    overflow: auto;
   }
 }
 
@@ -174,6 +221,54 @@
  # ESPACE 3D
  
  -------------------------------------------------------------------------------------*/
+
+.dimension .file{
+  width: 30vw;
+}
+
+.dimension {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 25px;
+}
+
+#d1{
+  background-image: url(./medias/images/heart.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#d2{
+  background-image: url(./medias/images/rendu_finale_01.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#d3{
+  background-image: url(./medias/images/horse_2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#d4{
+  background-image: url(./medias/images/vide.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#d5{
+  background-image: url(./medias/images/cliffs.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 
 /*-------------------------------------------------------------------------------------
 

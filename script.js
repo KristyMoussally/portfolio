@@ -102,57 +102,54 @@ const aboutMe = gsap.timeline({
     start: "top top",
     end: "bottom top",
     trigger: ".about",
-    toggleActions: "play complete",
+    toggleActions: "play non non reset",
+    onEnter: () => animAbout.play(),
   },
 });
-aboutMe.pause(),
-  aboutMe.fromTo(
-    "#titleMe",
+
+const animAbout = gsap.timeline({
+  paused: true,
+});
+animAbout.fromTo(
+  "#titleMe",
+  { y: -50, opacity: "0%" },
+  { y: 0, opacity: "100%"}
+).fromTo(
+    ".about-me",
     { y: -50, opacity: "0%" },
-    { y: 0, opacity: "100%" }
+    { y: 0, opacity: "100%"},
+    "<0.5"
+  ).fromTo(
+    "#learnMore",
+    { y: -50, opacity: "0%" },
+    { y: 0, opacity: "100%"},
+    "<0.5"
+  ).fromTo(
+    "#l1",
+    { y: -50, opacity: "0%", ease: "power2" },
+    { y: 0, opacity: "100%"},
+    "<0.5"
+  ).fromTo(
+    "#l2",
+    { y: -50, opacity: "0%", ease: "power2" },
+    { y: 0, opacity: "100%"},
+    "<0.5"
+  ).fromTo(
+    "#l3",
+    { y: -50, opacity: "0%", ease: "power2" },
+    { y: 0, opacity: "100%"},
+    "<0.5"
+  ).fromTo(
+    "#l4",
+    { y: -50, opacity: "0%", ease: "power2" },
+    { y: 0, opacity: "100%"},
+    "<0.5"
+  ).fromTo(
+    ".portrait",
+    { x: 500, backgroundPosition: "0% 100%", opacity: "0%" },
+    { x: 0, backgroundPosition: "50% 100%", opacity: "100%"},
+    1
   );
-aboutMe.fromTo(
-  ".about-me",
-  { y: -50, opacity: "0%" },
-  { y: 0, opacity: "100%" },
-  "<0.5"
-);
-aboutMe.fromTo(
-  "#learnMore",
-  { y: -50, opacity: "0%" },
-  { y: 0, opacity: "100%" },
-  "<0.5"
-);
-aboutMe.fromTo(
-  "#l1",
-  { y: -50, opacity: "0%", ease: "power2" },
-  { y: 0, opacity: "100%" },
-  "<0.5"
-);
-aboutMe.fromTo(
-  "#l2",
-  { y: -50, opacity: "0%", ease: "power2" },
-  { y: 0, opacity: "100%" },
-  "<0.5"
-);
-aboutMe.fromTo(
-  "#l3",
-  { y: -50, opacity: "0%", ease: "power2" },
-  { y: 0, opacity: "100%" },
-  "<0.5"
-);
-aboutMe.fromTo(
-  "#l4",
-  { y: -50, opacity: "0%", ease: "power2" },
-  { y: 0, opacity: "100%" },
-  "<0.5"
-);
-aboutMe.fromTo(
-  ".portrait",
-  { x: 500, backgroundPosition: "0% 100%", opacity: "0%" },
-  { x: 0, backgroundPosition: "50% 100%", opacity: "100%" },
-  1
-);
 
 /*-------------------------------------------------------------------------------------
 
