@@ -116,9 +116,8 @@ p {
 
 .Burger {
   display: none;
-  
 }
-.burger{
+.burger {
   width: 30px;
 }
 
@@ -470,6 +469,12 @@ hr {
 
 .f:hover {
   color: var(--gold);
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .copyright {
+    font-size: 0.4em;
+  }
 }
 
 @media (max-width: 425px) {

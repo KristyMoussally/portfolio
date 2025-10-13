@@ -66,7 +66,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 @media (max-width: 425px) {
@@ -75,9 +74,9 @@
     gap: 15px;
   }
 
-  #categories{
-  overflow-x: hidden;
-  overflow-y: visible;
+  #categories {
+    overflow-x: hidden;
+    overflow-y: visible;
     height: 50%;
   }
 
@@ -87,17 +86,17 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 425px) and (max-width: 768px) {
   .category {
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
   }
 
-  #categories{
-  overflow-x: hidden;
-  overflow-y: visible;
-  height: 100%;
-  margin-top: 150px;
+  #categories {
+    overflow-x: hidden;
+    overflow-y: visible;
+    height: 100%;
+    margin-top: 150px;
   }
 
   .file {
@@ -105,7 +104,6 @@
     height: 35vh;
   }
 }
-
 
 /*-------------------------------------------------------------------------------------
 
@@ -186,27 +184,25 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 12px;
   }
-  
 
   #gallery {
     overflow-x: hidden;
   }
 
-  .dessins{
+  .dessins {
     width: 150vw;
     height: 30vh;
   }
 }
 
-
-@media (max-width: 768px) {
+@media (min-width: 425px) and (max-width: 768px) {
   .illustration {
     grid-template-columns: repeat(1, 1fr);
     gap: 12px;
     height: 100%;
   }
   #gallery {
-    overflow: auto;
+    overflow-y: visible;
   }
 }
 
@@ -222,8 +218,26 @@
  
  -------------------------------------------------------------------------------------*/
 
-.dimension .file{
+#espace {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.dimension .file {
   width: 30vw;
+}
+
+#espace a {
+  color: var(--white);
+  text-decoration: none;
+  font-family: var(--title);
+  transition: color 1s;
+}
+
+#espace h4 a:hover {
+  color: var(--gold);
 }
 
 .dimension {
@@ -233,35 +247,35 @@
   gap: 25px;
 }
 
-#d1{
+#d1 {
   background-image: url(./medias/images/heart.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#d2{
+#d2 {
   background-image: url(./medias/images/rendu_finale_01.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#d3{
+#d3 {
   background-image: url(./medias/images/horse_2.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#d4{
+#d4 {
   background-image: url(./medias/images/vide.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-#d5{
+#d5 {
   background-image: url(./medias/images/cliffs.jpg);
   background-position: center;
   background-size: cover;
@@ -277,6 +291,10 @@
     width: 95vw;
     height: 35vh;
   }
+
+  #espace {
+    overflow-y: visible;
+  }
 }
 
 @media (min-width: 425px) and (max-width: 768px) {
@@ -289,9 +307,6 @@
     width: 50vw;
   }
 }
-
-
-
 
 /*-------------------------------------------------------------------------------------
 
