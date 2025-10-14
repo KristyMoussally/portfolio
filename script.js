@@ -62,23 +62,18 @@ const myProjects = gsap.timeline({
     start: "top top",
     end: "bottom top",
     trigger: ".projects",
+    toggleActions: "play",
+    onEnter: () => animProg.play(),
   },
 });
 
-myProjects.fromTo(
-  "#projet",
-  { y: 500, opacity: "0%" },
-  { y: 0, opacity: "100%" },
-  0
-);
-myProjects.fromTo(
-  ".swiper",
-  { x: 500, opacity: "0%" },
-  { x: 0, opacity: "100%" },
-  ">0"
-);
-
-myProjects.fromTo(".carroussel", { x: 500 }, { x: 0 }, ">0");
+const animProg = gsap.timeline({
+  paused: true,
+});
+animProg
+  .fromTo("#projet", { y: 500, opacity: "0%" }, { y: 0, opacity: "100%" }, 0)
+  .fromTo(".swiper", { x: 500, opacity: "0%" }, { x: 0, opacity: "100%" }, ">0")
+  .fromTo(".carroussel", { x: 500 }, { x: 0 }, ">0");
 
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
@@ -102,7 +97,7 @@ const aboutMe = gsap.timeline({
     start: "top top",
     end: "bottom top",
     trigger: ".about",
-    toggleActions: "play non non reset",
+    toggleActions: "play",
     onEnter: () => animAbout.play(),
   },
 });
@@ -110,44 +105,48 @@ const aboutMe = gsap.timeline({
 const animAbout = gsap.timeline({
   paused: true,
 });
-animAbout.fromTo(
-  "#titleMe",
-  { y: -50, opacity: "0%" },
-  { y: 0, opacity: "100%"}
-).fromTo(
+animAbout
+  .fromTo("#titleMe", { y: -50, opacity: "0%" }, { y: 0, opacity: "100%" })
+  .fromTo(
     ".about-me",
     { y: -50, opacity: "0%" },
-    { y: 0, opacity: "100%"},
+    { y: 0, opacity: "100%" },
     "<0.5"
-  ).fromTo(
+  )
+  .fromTo(
     "#learnMore",
     { y: -50, opacity: "0%" },
-    { y: 0, opacity: "100%"},
+    { y: 0, opacity: "100%" },
     "<0.5"
-  ).fromTo(
+  )
+  .fromTo(
     "#l1",
     { y: -50, opacity: "0%", ease: "power2" },
-    { y: 0, opacity: "100%"},
+    { y: 0, opacity: "100%" },
     "<0.5"
-  ).fromTo(
+  )
+  .fromTo(
     "#l2",
     { y: -50, opacity: "0%", ease: "power2" },
-    { y: 0, opacity: "100%"},
+    { y: 0, opacity: "100%" },
     "<0.5"
-  ).fromTo(
+  )
+  .fromTo(
     "#l3",
     { y: -50, opacity: "0%", ease: "power2" },
-    { y: 0, opacity: "100%"},
+    { y: 0, opacity: "100%" },
     "<0.5"
-  ).fromTo(
+  )
+  .fromTo(
     "#l4",
     { y: -50, opacity: "0%", ease: "power2" },
-    { y: 0, opacity: "100%"},
+    { y: 0, opacity: "100%" },
     "<0.5"
-  ).fromTo(
+  )
+  .fromTo(
     ".portrait",
     { x: 500, backgroundPosition: "0% 100%", opacity: "0%" },
-    { x: 0, backgroundPosition: "50% 100%", opacity: "100%"},
+    { x: 0, backgroundPosition: "50% 100%", opacity: "100%" },
     1
   );
 
