@@ -258,7 +258,6 @@ h1 {
   position: relative;
   width: 100%;
   height: 100%;
-  /*background-color: var(--gold);*/
   transition: width 1s, height 1s;
   overflow: hidden;
   text-decoration: none;
@@ -269,7 +268,7 @@ h1 {
   height: 50vh; /*60vh*/
 }
 
-h3 {
+.card h3 {
   letter-spacing: 0.5rem;
   position: absolute;
   top: 20%;
@@ -417,6 +416,13 @@ h3 {
 
 #l4 {
   background-image: url(./medias/images/Adobe-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#l5 {
+  background-image: url(./medias/images/Max_logo.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

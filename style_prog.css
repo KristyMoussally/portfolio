@@ -324,3 +324,37 @@
  # CONCEPTION SONORE
  
  -------------------------------------------------------------------------------------*/
+
+#audio {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.correct {
+  margin-top: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  height: 50vh;
+}
+
+.correct .logo-apps {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 0.1fr);
+}
+
+#audio h4 a {
+  text-decoration: none;
+  color: white;
+  transition: color 1s;
+}
+
+#audio h4 a:hover {
+  color: var(--gold);
+}

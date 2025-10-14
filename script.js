@@ -73,7 +73,7 @@ const animProg = gsap.timeline({
 animProg
   .fromTo("#projet", { y: 500, opacity: "0%" }, { y: 0, opacity: "100%" }, 0)
   .fromTo(".swiper", { x: 500, opacity: "0%" }, { x: 0, opacity: "100%" }, ">0")
-  .fromTo(".carroussel", { x: 500 }, { x: 0 }, ">0");
+  .fromTo(".carroussel", { x: 500 }, { x: 0, duration: 2 }, ">0");
 
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
