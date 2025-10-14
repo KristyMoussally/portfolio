@@ -427,6 +427,13 @@ h1 {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+#l6 {
+  background-image: url(./medias/images/unity-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 /*-------------------------------------------------------------------------------------
 
  # FOOTER
