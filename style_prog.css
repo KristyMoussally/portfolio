@@ -346,7 +346,7 @@
 .correct .logo-apps {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 0.1fr);
+  grid-template-columns: repeat(3, 0.2fr);
 }
 
 #audio h4 a {
@@ -357,4 +357,50 @@
 
 #audio h4 a:hover {
   color: var(--gold);
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .logo-apps {
+    grid-template-columns: repeat(2, 0.5fr);
+  }
+
+  .logo-apps .logiciel {
+    width: 40vw;
+  }
+
+  p {
+    width: 100%;
+    font-size: 0.9em;
+  }
+
+  #audio {
+    overflow-y: visible;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .correct .logo-apps {
+    grid-template-columns: repeat(2, 0.5fr);
+  }
+
+  .correct .logo-apps .logiciel {
+    width: 40vw;
+  }
+
+  p {
+    width: 100%;
+    font-size: 0.65em;
+  }
+
+  #audio {
+    overflow-y: visible;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  audio {
+    width: 80%;
+  }
 }

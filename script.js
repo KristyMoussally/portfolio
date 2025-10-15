@@ -8,13 +8,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.fromTo(
   ".prenom",
-  { y: "100vh", x: 250, opacity: "0%" },
+  { y: "100vh", opacity: "0%" },
   { y: "35vh", opacity: "100%", duration: 0.5 },
   0.5
 );
 gsap.fromTo(
   ".nom",
-  { y: "100vh", x: 250, opacity: "0%" },
+  { y: "100vh", opacity: "0%" },
   { y: "60vh", opacity: "100%", duration: 0.5 },
   "<0.5"
 );
@@ -78,8 +78,20 @@ animProg
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 15,
+  breakpoints: {
+    425: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
 });
 
 /*-------------------------------------------------------------------------------------

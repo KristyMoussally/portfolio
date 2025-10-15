@@ -155,6 +155,26 @@ h1 {
   position: absolute;
   letter-spacing: 1rem;
   z-index: 3;
+  left: 250px;
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  h1 {
+    font-size: 4em;
+    left: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 1.7em;
+    letter-spacing: 0.9rem;
+    left: 20px;
+  }
+
+  .link-adress {
+    font-size: 0.8em;
+  }
 }
 
 .arrow {
@@ -382,6 +402,7 @@ h1 {
 }
 
 .logo-apps {
+  position: relative;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 0.18fr);
@@ -433,6 +454,96 @@ h1 {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: stretch;
+    align-items: flex-start;
+  }
+  .about-me {
+    font-size: 0.8em;
+    width: 50%;
+  }
+  .me {
+    margin-top: 70px;
+    left: 20%;
+    width: 100%;
+  }
+  .portrait {
+    margin-top: 20px;
+    width: 110vw;
+    height: 50vh;
+    background-size: contain;
+  }
+  .logiciel {
+    width: 20vw;
+  }
+
+  .me h2 {
+    letter-spacing: 1rem;
+  }
+
+  .logo-apps {
+    left: 5%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 0.1fr);
+    gap: 2px;
+    justify-content: center;
+  }
+
+  .me a {
+    width: 100%;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 425px) {
+  .about {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: stretch;
+    align-items: flex-start;
+  }
+  .about-me {
+    font-size: 0.9em;
+    width: 65%;
+  }
+  .me {
+    margin-top: 70px;
+    left: 20%;
+    width: 100%;
+  }
+  .portrait {
+    margin-top: 20px;
+    width: 110vw;
+    height: 50vh;
+    background-size: contain;
+  }
+  .logiciel {
+    width: 20vw;
+  }
+
+  .me h2 {
+    width: 70%;
+  }
+
+  .logo-apps {
+    left: 5%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 0.1fr);
+    gap: 2px;
+    justify-content: center;
+  }
+
+  .me a {
+    width: 100%;
+    font-weight: bold;
+  }
 }
 /*-------------------------------------------------------------------------------------
 
