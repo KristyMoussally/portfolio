@@ -205,6 +205,7 @@
     gap: 12px;
     height: 110vh;
   }
+
   #gallery {
     overflow-y: visible;
   }
@@ -291,6 +292,7 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
   }
+
   .dimension .file {
     width: 95vw;
     height: 35vh;
@@ -307,6 +309,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
+
   .dimension .file {
     height: 35vh;
     width: 50vw;
@@ -472,7 +475,7 @@
 }
 
 #p1 {
-  background-image: url(./medias/images/Capture\ d’écran\ 2025-08-28\ 105935.png);
+  background-image: url(https://camo.githubusercontent.com/1f746efe9d1afa2e93d54cdd68a47028000b6d9bac9b4003a5edfaf86617b841/68747470733a2f2f692e6962622e636f2f4a4339596e34522f63617274652e706e67);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -486,7 +489,7 @@
 }
 
 #p3 {
-  background-image: url(./medias/images/Capture\ d’écran\ 2025-08-28\ 105935.png);
+  background-image: url(https://camo.githubusercontent.com/7205c8950f8e265925bab1462d48fea3e96ff705ac42a5c3166854830578662b/68747470733a2f2f692e6962622e636f2f7139714c584c362f696d6167652e706e67);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -501,6 +504,7 @@
   height: 50vh;
   transition: transform 1s, box-shadow 0.5s;
 }
+
 .aller-prog {
   text-decoration: none;
   color: var(--white);
@@ -525,26 +529,26 @@
 @media (min-width: 425px) and (max-width: 768px) {
   .preview {
     grid-template-columns: repeat(2, 0.5fr);
-    gap: 5px;
-    top: 50px;
   }
 
   #visuel p,
   li {
-    font-size: 0.8em;
+    font-size: 0.95em;
   }
+
   .preview .photo {
     height: 30vh;
     width: 50vw;
   }
+
   .logo-apps {
     width: 50%;
     grid-template-columns: repeat(2, 0.05fr);
     gap: 20px;
     justify-content: center;
   }
+
   .moodboard {
-    top: 50px;
     width: 100%;
   }
 
@@ -552,12 +556,69 @@
     flex-direction: column;
     width: 100%;
   }
+
   .logiciel {
     width: 20vw;
   }
+
   #visuel {
     overflow-y: visible;
     margin-top: 100px;
     justify-content: space-around;
   }
+
+  .img-vr {
+    width: 90vw
+  }
+}
+
+
+@media (max-width: 425px) {
+  .preview {
+    grid-template-columns: repeat(1, 0.5fr);
+    gap: 5px;
+    justify-content: center;
+    top: 50px;
+  }
+
+  #visuel p,
+  li {
+    font-size: .95em;
+  }
+
+  .preview .photo {
+    height: 20vh;
+    width: 80vw;
+  }
+
+  
+  .logiciel {
+    width: 20vw;
+  }
+
+  .debut {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .debut p {
+   width: 100%;
+  }
+
+  .moodboard{
+    align-self: center;
+  }
+  
+  .logo-apps {
+    width: 50%;
+    grid-template-columns: repeat(3, 0.05fr);
+    gap: 20px;
+    align-self: center;
+  }
+
+  .img-vr {
+    width: 100vw
+  }
+  
+
 }
