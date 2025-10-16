@@ -467,29 +467,67 @@
 .moodboard {
   width: 90vw;
   height: 30vh;
+  position: relative;
+}
+
+#eco{
   background-image: url(https://i.ibb.co/7QKbWb8/ambiencetp3.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-  position: relative;
 }
 
-#p1 {
+#below{
+  background-image: url(./medias/images/Moodboard.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#eco1 {
   background-image: url(https://camo.githubusercontent.com/1f746efe9d1afa2e93d54cdd68a47028000b6d9bac9b4003a5edfaf86617b841/68747470733a2f2f692e6962622e636f2f4a4339596e34522f63617274652e706e67);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-#p2 {
+#eco2 {
   background-image: url(./medias/images/Capture\ d’écran\ 2025-08-28\ 105935.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-#p3 {
+#eco3 {
   background-image: url(https://camo.githubusercontent.com/7205c8950f8e265925bab1462d48fea3e96ff705ac42a5c3166854830578662b/68747470733a2f2f692e6962622e636f2f7139714c584c362f696d6167652e706e67);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#below1 {
+  background-image: url(./medias/images/whale.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#below2 {
+  background-image: url(./medias/images/plains_gauche.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#below3 {
+  background-image: url(./medias/images/cliffs.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#belowPreview{
+  background-image: url(./medias/images/city_01.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
