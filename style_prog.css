@@ -404,3 +404,160 @@
     width: 80%;
   }
 }
+
+/*-------------------------------------------------------------------------------------
+
+ # CONCEPTION VISUEL
+ 
+ -------------------------------------------------------------------------------------*/
+
+#visuel {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 250vh;
+}
+
+.description {
+  position: relative;
+  margin-left: 150px;
+  margin-right: 150px;
+  width: 80%;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.preview {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 0.5fr);
+  gap: 5px;
+  width: 100%;
+  align-items: center;
+  justify-items: center;
+}
+
+.photo {
+  background-color: var(--gold);
+  width: 80%;
+  height: 40vh;
+}
+
+.description a {
+  position: relative;
+  align-self: center;
+}
+
+.debut {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.debut p {
+  width: 70%;
+}
+
+.moodboard {
+  width: 90vw;
+  height: 30vh;
+  background-image: url(https://i.ibb.co/7QKbWb8/ambiencetp3.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#p1 {
+  background-image: url(./medias/images/Capture\ d’écran\ 2025-08-28\ 105935.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#p2 {
+  background-image: url(./medias/images/Capture\ d’écran\ 2025-08-28\ 105935.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#p3 {
+  background-image: url(./medias/images/Capture\ d’écran\ 2025-08-28\ 105935.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.img-vr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gold);
+  width: 50vw;
+  height: 50vh;
+  transition: transform 1s, box-shadow 0.5s;
+}
+.aller-prog {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1.5em;
+}
+
+.img-vr:hover {
+  transform: scale(1.05);
+  box-shadow: var(--black) 0px 15px 10px;
+}
+
+#visuel .retour-prog {
+  color: var(--white);
+  text-decoration: none;
+  transition: color 1s;
+}
+
+#visuel .retour-prog:hover {
+  color: var(--gold);
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .preview {
+    grid-template-columns: repeat(2, 0.5fr);
+    gap: 5px;
+    top: 50px;
+  }
+
+  #visuel p,
+  li {
+    font-size: 0.8em;
+  }
+  .preview .photo {
+    height: 30vh;
+    width: 50vw;
+  }
+  .logo-apps {
+    width: 50%;
+    grid-template-columns: repeat(2, 0.05fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  .moodboard {
+    top: 50px;
+    width: 100%;
+  }
+
+  .debut {
+    flex-direction: column;
+    width: 100%;
+  }
+  .logiciel {
+    width: 20vw;
+  }
+  #visuel {
+    overflow-y: visible;
+    margin-top: 100px;
+    justify-content: space-around;
+  }
+}
