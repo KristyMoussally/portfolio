@@ -423,3 +423,57 @@
   background-size: 50vw;
   background-repeat: no-repeat;
 }
+
+/*-------------------------------------------------------------------------------------
+
+ # RESTO
+ 
+ -------------------------------------------------------------------------------------*/
+
+ 
+#resto{
+  background-image: url(./medias/images/moodboard3D.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#resto1 {
+  background-image: url(./medias/images/menu.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#resto2 {
+  background-image: url(./medias/images/boujie.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#resto3 {
+  background-image: url(./medias/images/lampe.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+.restoPreview {
+  background-image: url(./medias/images/rendu_finale_01.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 50vw;
+  transition: background-image 1s, transform 0.5s;
+}
+
+
+.restoPreview:hover {
+  background-image: url(./medias/images/rendu_finale_05.jpg);
+  background-position: center;
+  background-size: 50vw;
+  background-repeat: no-repeat;
+}
