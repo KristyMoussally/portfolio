@@ -150,7 +150,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--gold);
+  background-repeat: no-repeat;
   width: 50vw;
   height: 50vh;
   transition: transform 1s, box-shadow 0.5s;
@@ -193,6 +193,7 @@
   }
 
   .logo-apps {
+    display: grid;
     width: 50%;
     grid-template-columns: repeat(2, 0.05fr);
     gap: 20px;
@@ -219,13 +220,13 @@
   }
 
   .img-vr {
-    width: 90vw
+    width: 90vw;
   }
 }
 
-
 @media (max-width: 425px) {
   .preview {
+    display: grid;
     grid-template-columns: repeat(1, 0.5fr);
     gap: 5px;
     justify-content: center;
@@ -234,7 +235,7 @@
 
   #visuel p,
   li {
-    font-size: .95em;
+    font-size: 0.95em;
   }
 
   .preview .photo {
@@ -242,7 +243,6 @@
     width: 80vw;
   }
 
-  
   .logiciel {
     width: 20vw;
   }
@@ -253,13 +253,13 @@
   }
 
   .debut p {
-   width: 100%;
+    width: 100%;
   }
 
-  .moodboard{
+  .moodboard {
     align-self: center;
   }
-  
+
   .logo-apps {
     width: 50%;
     grid-template-columns: repeat(3, 0.05fr);
@@ -268,10 +268,8 @@
   }
 
   .img-vr {
-    width: 100vw
+    width: 100vw;
   }
-  
-
 }
 
 /*-------------------------------------------------------------------------------------
@@ -280,7 +278,7 @@
  
  -------------------------------------------------------------------------------------*/
 
- #eco{
+#eco {
   background-image: url(https://i.ibb.co/7QKbWb8/ambiencetp3.png);
   background-size: contain;
   background-position: center;
@@ -295,9 +293,9 @@
 }
 
 #eco2 {
-  background-image: url(./medias/images/Capture\ d’écran\ 2025-08-28\ 105935.png);
-  background-position: center;
-  background-size: contain;
+  background-image: url(./medias/images/eco_3.png);
+  background-position: right;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -308,13 +306,28 @@
   background-repeat: no-repeat;
 }
 
+.ecoGit {
+  background-image: url(./medias/images/eco_1.png);
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s, transform 0.5s;
+  background-size: 50vw;
+}
+
+.ecoGit:hover {
+  background-image: url(./medias/images/eco_2.png);
+  background-size: cover;
+  background-position: center;
+  background-size: 50vw;
+}
+
 /*-------------------------------------------------------------------------------------
 
  # BELOW THE DEPTHS WE LIVE
  
  -------------------------------------------------------------------------------------*/
 
- #below{
+#below {
   background-image: url(./medias/images/Moodboard.jpg);
   background-size: contain;
   background-position: center;
@@ -324,7 +337,7 @@
 #below1 {
   background-image: url(./medias/images/whale.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -338,13 +351,23 @@
 #below3 {
   background-image: url(./medias/images/cliffs.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
-#belowPreview{
+.belowPreview {
   background-image: url(./medias/images/city_01.jpg);
   background-position: center;
   background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 50vw;
+  transition: background-image 1s, transform 0.5s;
+}
+
+
+.belowPreview:hover {
+  background-image: url(./medias/images/tunnel_01.jpg);
+  background-position: center;
+  background-size: 50vw;
   background-repeat: no-repeat;
 }

@@ -421,7 +421,7 @@ h1 {
   right: 5%;
   width: 30%;
   height: 70vh;
-  background-image: url(./medias/profile/profil.jpg);
+  background-image: url(./medias/images/heart.jpg);
   overflow: hidden;
   background-size: contain;
   background-repeat: no-repeat;
@@ -524,7 +524,7 @@ h1 {
     width: 110vw;
     height: 50vh;
     background-size: cover;
-    background-image: url(./medias/profile/tete.jpg);
+    background-image: url(./medias/images/heart.jpg);
   }
   .logiciel {
     width: 20vw;
@@ -570,7 +570,7 @@ h1 {
     width: 110vw;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(./medias/profile/tete.jpg);
+    background-image: url(./medias/images/heart.jpg);
   }
   .logiciel {
     width: 20vw;
