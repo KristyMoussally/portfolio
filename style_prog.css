@@ -407,22 +407,23 @@
   background-repeat: no-repeat;
 }
 
-.banalPreview {
-  background-image: url(./medias/images/homme_banal.png);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: 50vw;
-  transition: background-image 1s, transform 0.5s;
+video{
+  width: 50vw;
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  video{
+    width: 90vw;
+  }
 }
 
 
-.banalPreview:hover {
-  background-image: url(./medias/images/tunnel_01.jpg);
-  background-position: center;
-  background-size: 50vw;
-  background-repeat: no-repeat;
+@media (max-width: 425px) {
+  video{
+    width: 80vw;
+  }
 }
+
 
 /*-------------------------------------------------------------------------------------
 
