@@ -1,5 +1,28 @@
 /*-------------------------------------------------------------------------------------
 
+ # MENU BURGER
+ 
+ -------------------------------------------------------------------------------------*/
+
+ const btnBurger = document.querySelector(".burger");
+
+
+ btnBurger.addEventListener("click", () => {
+  btnBurger.classList.toggle("x");
+
+ })
+
+ /*
+   window.location.href = "eco6teme.html";
+  window.location.href = "below.html";
+  window.location.href = "resto.html";
+  window.location.href = "banal.html";
+  window.location.href = "paysage.html";
+  */
+
+
+/*-------------------------------------------------------------------------------------
+
  # HÉRO PORTFOLIO
  
  -------------------------------------------------------------------------------------*/
