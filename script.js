@@ -4,22 +4,40 @@
  
  -------------------------------------------------------------------------------------*/
 
- const btnBurger = document.querySelector(".burger");
+const btnBurger = document.querySelector(".burger");
 
-
- btnBurger.addEventListener("click", () => {
+btnBurger.addEventListener("click", () => {
   btnBurger.classList.toggle("x");
+});
 
- })
+// Va aux pages quand selectionné
+function pageProjet() {
+  switch (document.getElementById("myProg").value) {
+    case "below":
+      window.location.href = "./below.html";
+      break;
 
- /*
-   window.location.href = "eco6teme.html";
-  window.location.href = "below.html";
-  window.location.href = "resto.html";
-  window.location.href = "banal.html";
-  window.location.href = "paysage.html";
-  */
+    case "paysage_sonore":
+      window.location.href = "./paysage_sonore.html";
+      break;
 
+    case "resto":
+      window.location.href = "./resto.html";
+      break;
+
+    case "banal":
+      window.location.href = "./banal.html";
+      break;
+
+    case "eco6teme":
+      window.location.href = "./eco6teme.html";
+      break;
+
+    default:
+      window.location.href = "#";
+      break;
+  }
+}
 
 /*-------------------------------------------------------------------------------------
 

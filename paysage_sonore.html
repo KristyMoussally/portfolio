@@ -17,14 +17,21 @@
           <a href="index.html" class="link">Accueil</a>
         </li>
         <li class="item">
-          <a href="projets.html" class="link">Projets</a>
+          <select id="myProg" name="projets" onChange="pageProjet();">
+            <option value="">Projets</option>
+            <option value="below">Below the depths</option>
+            <option value="paysage_sonore">Paysage</option>
+            <option value="resto">Resto</option>
+            <option value="banal">Homme banal</option>
+            <option value="eco6teme">Eco6teme</option>
+          </select>
         </li>
         <li class="item"><a href="index.html" class="link">À propos</a></li>
         <li class="item">
           <a href="contact.html" class="link">Contact</a>
         </li>
         <li class="item Burger">
-          <div>burger</div>
+          <div class="burger"></div>
         </li>
       </ul>
     </header>
@@ -80,12 +87,10 @@
         </li>
         <hr />
         <li class="item">
-          <p class="copyright">
-            Copyright © 2025 Kristy Moussally. All rights reserved. | Ce site a
-            été réalisé par Visual Studio Code
-          </p>
+          <p class="copyright">Ce site a été réalisé par Visual Studio Code</p>
         </li>
       </ul>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

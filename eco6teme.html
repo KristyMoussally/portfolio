@@ -11,15 +11,22 @@
     <header class="nav">
       <ul class="list">
         <li class="item logo">
-          <h4><a href="#" class="logo-link">KM</a></h4>
+          <h4><a href="index.html" class="logo-link">KM</a></h4>
         </li>
         <li class="item">
-          <a href="#" class="link">Accueil</a>
+          <a href="index.html" class="link">Accueil</a>
         </li>
         <li class="item">
-          <a href="#" class="link">Projets</a>
+          <select id="myProg" name="projets" onChange="pageProjet();">
+            <option value="">Projets</option>
+            <option value="below">Below the depths</option>
+            <option value="paysage_sonore">Paysage</option>
+            <option value="resto">Resto</option>
+            <option value="banal">Homme banal</option>
+            <option value="eco6teme">Eco6teme</option>
+          </select>
         </li>
-        <li class="#"><a href="#apropos" class="link">À propos</a></li>
+        <li class="item"><a href="index.html" class="link">À propos</a></li>
         <li class="item">
           <a href="contact.html" class="link">Contact</a>
         </li>
@@ -110,5 +117,6 @@
         </li>
       </ul>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
