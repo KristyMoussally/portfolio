@@ -294,7 +294,7 @@
 
 #eco2 {
   background-image: url(./medias/images/eco_3.png);
-  background-position: right;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -366,6 +366,58 @@
 
 
 .belowPreview:hover {
+  background-image: url(./medias/images/tunnel_01.jpg);
+  background-position: center;
+  background-size: 50vw;
+  background-repeat: no-repeat;
+}
+
+/*-------------------------------------------------------------------------------------
+
+ # HOMME BANAL
+ 
+ -------------------------------------------------------------------------------------*/
+
+
+#banal{
+  background-image: url(./medias/images/MOODBOARD-STOP\ MOTION.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#ban1 {
+  background-image: url(./medias/images/Rectangle\ 1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#ban2 {
+  background-image: url(./medias/images/studio.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#ban3 {
+  background-image: url(./medias/images/MOODBOARD-GÉNÉRIQUE.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.banalPreview {
+  background-image: url(./medias/images/homme_banal.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: 50vw;
+  transition: background-image 1s, transform 0.5s;
+}
+
+
+.banalPreview:hover {
   background-image: url(./medias/images/tunnel_01.jpg);
   background-position: center;
   background-size: 50vw;

@@ -503,6 +503,20 @@ h1 {
   background-repeat: no-repeat;
 }
 
+#l7 {
+  background-image: url(./medias/images/Illustrator-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#l8 {
+  background-image: url(./medias/images/AfterEffects-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 425px) and (max-width: 768px) {
   .about {
     display: flex;
