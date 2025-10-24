@@ -591,14 +591,13 @@ h1 {
   position: relative;
   letter-spacing: 1rem;
   font-size: 2em;
-  top: 50px;
   text-align: center;
 }
 
 .logo-apps {
   align-self: center;
   position: relative;
-  width: 100%;
+  width: fit-content;
   display: grid;
   grid-template-columns: repeat(4, 0.18fr);
   grid-template-rows: repeat(2, 1fr);
@@ -695,7 +694,7 @@ h1 {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 425px) and (max-width: 768px) {
+@media (max-width: 426px) and (max-width: 768px) {
   .logo-apps {
     left: 5%;
     width: 50%;
@@ -710,18 +709,24 @@ h1 {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .logo-apps {
     left: 5%;
     width: 50%;
     display: grid;
-    grid-template-columns: repeat(4, 0.1fr);
-    gap: 2px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     justify-content: center;
+    align-items: center;
   }
 
   .logiciel {
     width: 20vw;
+  }
+
+  #compétance {
+    position: relative;
+    letter-spacing: 0.6rem;
   }
 }
 
@@ -773,6 +778,13 @@ hr {
 
 .f:hover {
   color: var(--gold);
+}
+
+footer .footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
