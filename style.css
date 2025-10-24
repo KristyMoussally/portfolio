@@ -446,7 +446,7 @@ h1 {
   position: relative;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 0.18fr);
+  grid-template-columns: repeat(3, 0.18fr);
   grid-template-rows: repeat(1, 1fr);
 }
 
@@ -576,6 +576,18 @@ h1 {
   .logiciel {
     width: 20vw;
   }
+  .logo-sociaux {
+    left: 5%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+    gap: 2px;
+    justify-content: center;
+  }
+
+  .social {
+    width: 20vw;
+  }
 
   .me h2 {
     letter-spacing: 0.4rem;
@@ -620,6 +632,19 @@ h1 {
     background-image: url(./medias/profile/photo_tete.png);
   }
   .logiciel {
+    width: 20vw;
+  }
+
+  .logo-sociaux {
+    left: 5%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+    gap: 2px;
+    justify-content: center;
+  }
+
+  .social {
     width: 20vw;
   }
 
