@@ -166,7 +166,7 @@ option {
   align-self: flex-end;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .logo {
     display: block;
   }
@@ -197,14 +197,14 @@ h1 {
   left: 250px;
 }
 
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   h1 {
     font-size: 4em;
     left: 50px;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   h1 {
     font-size: 1.7em;
     letter-spacing: 0.9rem;
@@ -437,7 +437,7 @@ h1 {
 }
 
 .me a {
-  width: 8vw;
+  width: fit-content;
   font-weight: bold;
   height: fit-content;
 }
@@ -456,90 +456,21 @@ h1 {
 }
 
 #s1 {
-  background-image: url(./medias/images/linkdin-logo.png);
+  background-image: url(./medias/logo/linkdin-logo.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #s2 {
-  background-image: url(./medias/images/mail-logo.png);
+  background-image: url(./medias/logo/mail-logo.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #s3 {
-  background-image: url(./medias/images/cv-logo.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.logo-apps {
-  position: relative;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 0.18fr);
-  grid-template-rows: repeat(1, 1fr);
-}
-
-.logiciel {
-  width: 5vw;
-  height: 7vh;
-}
-
-#l1 {
-  background-image: url(./medias/images/maya-logo.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#l2 {
-  background-image: url(./medias/images/Reaper-logo.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#l3 {
-  background-image: url(./medias/images/Davinci-logo.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#l4 {
-  background-image: url(./medias/images/Adobe-logo.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#l5 {
-  background-image: url(./medias/images/Max_logo.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#l6 {
-  background-image: url(./medias/images/unity-logo.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#l7 {
-  background-image: url(./medias/images/Illustrator-logo.png);
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-#l8 {
-  background-image: url(./medias/images/AfterEffects-logo.png);
+  background-image: url(./medias/logo/cv-logo.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -573,9 +504,7 @@ h1 {
     background-position: bottom;
     background-image: url(./medias/profile/photo_tete.png);
   }
-  .logiciel {
-    width: 20vw;
-  }
+
   .logo-sociaux {
     left: 5%;
     width: 50%;
@@ -591,15 +520,6 @@ h1 {
 
   .me h2 {
     letter-spacing: 0.4rem;
-  }
-
-  .logo-apps {
-    left: 5%;
-    width: 50%;
-    display: grid;
-    grid-template-columns: repeat(4, 0.1fr);
-    gap: 2px;
-    justify-content: center;
   }
 
   .me a {
@@ -631,9 +551,6 @@ h1 {
     background-repeat: no-repeat;
     background-image: url(./medias/profile/photo_tete.png);
   }
-  .logiciel {
-    width: 20vw;
-  }
 
   .logo-sociaux {
     left: 5%;
@@ -652,6 +569,133 @@ h1 {
     width: 70%;
   }
 
+  .me a {
+    width: 100%;
+    font-weight: bold;
+  }
+}
+
+/*-------------------------------------------------------------------------------------
+
+ # À PROPOS
+ 
+ -------------------------------------------------------------------------------------*/
+
+.competances {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#compétance {
+  position: relative;
+  letter-spacing: 1rem;
+  font-size: 2em;
+  top: 50px;
+  text-align: center;
+}
+
+.logo-apps {
+  align-self: center;
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 0.18fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  justify-content: space-evenly;
+}
+
+.logiciel {
+  width: 20vw;
+  height: 10vh;
+}
+
+#l1 {
+  background-image: url(./medias/logo/maya-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#l2 {
+  background-image: url(./medias/logo/Reaper-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#l3 {
+  background-image: url(./medias/logo/Davinci-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#l4 {
+  background-image: url(./medias/logo/Max_logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#l5 {
+  background-image: url(./medias/logo/Adobe-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#l6 {
+  background-image: url(./medias/logo/Illustrator-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#l7 {
+  background-image: url(./medias/logo/AfterEffects-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#l8 {
+  background-image: url(./medias/logo/Photoshop-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#l9 {
+  background-image: url(./medias/logo/VsCode-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#l10 {
+  background-image: url(./medias/logo/Touchdesigner-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#l11 {
+  background-image: url(./medias/logo/figma-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#l12 {
+  background-image: url(./medias/logo/unity-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 425px) and (max-width: 768px) {
   .logo-apps {
     left: 5%;
     width: 50%;
@@ -661,11 +705,26 @@ h1 {
     justify-content: center;
   }
 
-  .me a {
-    width: 100%;
-    font-weight: bold;
+  .logiciel {
+    width: 20vw;
   }
 }
+
+@media (max-width: 425px) {
+  .logo-apps {
+    left: 5%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 0.1fr);
+    gap: 2px;
+    justify-content: center;
+  }
+
+  .logiciel {
+    width: 20vw;
+  }
+}
+
 /*-------------------------------------------------------------------------------------
 
  # FOOTER
@@ -716,13 +775,13 @@ hr {
   color: var(--gold);
 }
 
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .copyright {
     font-size: 0.4em;
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .copyright {
     font-size: 0.4em;
   }

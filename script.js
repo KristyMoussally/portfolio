@@ -164,37 +164,31 @@ animAbout
     ".about-me",
     { y: -50, opacity: "0%" },
     { y: 0, opacity: "100%" },
-    "<0.5"
+    "<0.2"
   )
   .fromTo(
     "#learnMore",
     { y: -50, opacity: "0%" },
     { y: 0, opacity: "100%" },
-    "<0.5"
+    "<0.2"
   )
   .fromTo(
-    "#l1",
+    "#s1",
     { y: -50, opacity: "0%", ease: "power2" },
     { y: 0, opacity: "100%" },
-    "<0.5"
+    "<0.2"
   )
   .fromTo(
-    "#l2",
+    "#s2",
     { y: -50, opacity: "0%", ease: "power2" },
     { y: 0, opacity: "100%" },
-    "<0.5"
+    "<0.2"
   )
   .fromTo(
-    "#l3",
+    "#s3",
     { y: -50, opacity: "0%", ease: "power2" },
     { y: 0, opacity: "100%" },
-    "<0.5"
-  )
-  .fromTo(
-    "#l4",
-    { y: -50, opacity: "0%", ease: "power2" },
-    { y: 0, opacity: "100%" },
-    "<0.5"
+    "<0.2"
   )
   .fromTo(
     ".portrait",
