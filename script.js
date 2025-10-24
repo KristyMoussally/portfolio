@@ -96,8 +96,8 @@ titleAnimScreen.fromTo(".arrow", { y: 0 }, { y: "-100vh" }, "<0");
 
 const myProjects = gsap.timeline({
   scrollTrigger: {
-    pin: 0,
-    pinSpacing: 0,
+    pin: !0,
+    pinSpacing: !0,
     scrub: 1,
     markers: true,
     start: "top top",

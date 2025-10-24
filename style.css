@@ -547,8 +547,9 @@ h1 {
     margin-top: 20px;
     width: 110vw;
     height: 50vh;
-    background-size: cover;
+    background-size: contain 100%;
     background-repeat: no-repeat;
+    background-position: bottom;
     background-image: url(./medias/profile/photo_tete.png);
   }
   .logiciel {
@@ -556,7 +557,7 @@ h1 {
   }
 
   .me h2 {
-    letter-spacing: 1rem;
+    letter-spacing: 0.4rem;
   }
 
   .logo-apps {
