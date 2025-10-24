@@ -455,6 +455,27 @@ h1 {
   height: 7vh;
 }
 
+#s1 {
+  background-image: url(./medias/images/linkdin-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#s2 {
+  background-image: url(./medias/images/mail-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#s3 {
+  background-image: url(./medias/images/cv-logo.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .logo-apps {
   position: relative;
   width: 100%;
