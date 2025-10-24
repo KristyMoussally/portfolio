@@ -402,6 +402,7 @@ h1 {
  -------------------------------------------------------------------------------------*/
 
 .about {
+  height: 120vh;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -476,7 +477,7 @@ h1 {
   background-repeat: no-repeat;
 }
 
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   #titleMe {
     width: fit-content;
   }
@@ -499,7 +500,7 @@ h1 {
     margin-top: 20px;
     width: 110vw;
     height: 50vh;
-    background-size: contain 100%;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
     background-image: url(./medias/profile/photo_tete.png);
@@ -528,7 +529,7 @@ h1 {
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .about {
     display: flex;
     flex-direction: column-reverse;
@@ -550,6 +551,9 @@ h1 {
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(./medias/profile/photo_tete.png);
+  }
+  .me a {
+    display: block;
   }
 
   .logo-sociaux {
@@ -781,6 +785,7 @@ hr {
 }
 
 footer .footer {
+  left: 0;
   display: grid;
   justify-content: center;
   align-items: center;

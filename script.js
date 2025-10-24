@@ -21,8 +21,8 @@ function pageProjet() {
       window.location.href = "./paysage_sonore.html";
       break;
 
-    case "resto":
-      window.location.href = "./resto.html";
+    case "ribs":
+      window.location.href = "./ribs.html";
       break;
 
     case "banal":

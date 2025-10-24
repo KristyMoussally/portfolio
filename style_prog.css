@@ -38,7 +38,7 @@
   color: var(--gold);
 }
 
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .logo-apps {
     grid-template-columns: repeat(2, 0.5fr);
   }
@@ -59,7 +59,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .correct .logo-apps {
     grid-template-columns: repeat(2, 0.5fr);
   }
@@ -93,7 +93,7 @@
 #visuel {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   height: 250vh;
 }
@@ -110,7 +110,6 @@
 }
 
 .preview {
-  position: relative;
   display: grid;
   grid-template-columns: repeat(3, 0.5fr);
   gap: 5px;
@@ -120,7 +119,7 @@
 }
 
 .photo {
-  background-color: var(--gold);
+  /*background-color: var(--gold);*/
   width: 80%;
   height: 40vh;
 }
@@ -177,7 +176,7 @@
   color: var(--gold);
 }
 
-@media (min-width: 425px) and (max-width: 768px) {
+@media (min-width: 426px) and (max-width: 768px) {
   .preview {
     grid-template-columns: repeat(2, 0.5fr);
   }
@@ -215,8 +214,7 @@
 
   #visuel {
     overflow-y: visible;
-    margin-top: 100px;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .img-vr {
@@ -224,7 +222,7 @@
   }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .preview {
     display: grid;
     grid-template-columns: repeat(1, 0.5fr);
@@ -295,7 +293,7 @@
 #eco2 {
   background-image: url(./medias/images/eco_3.png);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -311,14 +309,12 @@
   background-size: cover;
   background-position: center;
   transition: background-image 1s, transform 0.5s;
-  background-size: 50vw;
 }
 
 .ecoGit:hover {
   background-image: url(./medias/images/eco_2.png);
   background-size: cover;
   background-position: center;
-  background-size: 50vw;
 }
 
 /*-------------------------------------------------------------------------------------
@@ -344,12 +340,12 @@
 #below2 {
   background-image: url(./medias/images/plains_gauche.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 #below3 {
-  background-image: url(./medias/images/cliffs.jpg);
+  background-image: url(./medias/images/bts_plains_gauche.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -358,17 +354,15 @@
 .belowPreview {
   background-image: url(./medias/images/city_01.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 50vw;
   transition: background-image 1s, transform 0.5s;
 }
-
 
 .belowPreview:hover {
   background-image: url(./medias/images/tunnel_01.jpg);
   background-position: center;
-  background-size: 50vw;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -378,8 +372,7 @@
  
  -------------------------------------------------------------------------------------*/
 
-
-#banal{
+#banal {
   background-image: url(./medias/images/MOODBOARD-STOP\ MOTION.png);
   background-size: contain;
   background-position: center;
@@ -407,63 +400,58 @@
   background-repeat: no-repeat;
 }
 
-video{
+video {
   width: 50vw;
 }
 
-@media (min-width: 425px) and (max-width: 768px) {
-  video{
+@media (min-width: 426px) and (max-width: 768px) {
+  video {
     width: 90vw;
   }
 }
 
-
-@media (max-width: 425px) {
-  video{
+@media (max-width: 426px) {
+  video {
     width: 80vw;
   }
 }
 
-
 /*-------------------------------------------------------------------------------------
 
- # RESTO
+ # RIBS
  
  -------------------------------------------------------------------------------------*/
 
- 
-#resto{
-  background-image: url(./medias/images/moodboard3D.png);
+#rib {
+  background-image: url(./medias/images/ribmoodboard.png);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#resto1 {
-  background-image: url(./medias/images/menu.png);
+#rib1 {
+  background-image: url(./medias/images/horse_1.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
-#resto2 {
-  background-image: url(./medias/images/boujie.png);
+#rib2 {
+  background-image: url(./medias/images/horse_3.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
-#resto3 {
+#rib3 {
   background-image: url(./medias/images/lampe.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-
-
-.restoPreview {
-  background-image: url(./medias/images/rendu_finale_01.jpg);
+.ribPreview {
+  background-image: url(./medias/images/horse_2.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -471,9 +459,8 @@ video{
   transition: background-image 1s, transform 0.5s;
 }
 
-
-.restoPreview:hover {
-  background-image: url(./medias/images/rendu_finale_05.jpg);
+.ribPreview:hover {
+  background-image: url(./medias/images/horse_3.jpg);
   background-position: center;
   background-size: 50vw;
   background-repeat: no-repeat;
