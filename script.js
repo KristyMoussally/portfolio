@@ -90,53 +90,6 @@ titleAnimScreen.fromTo(".arrow", { y: 0 }, { y: "-100vh" }, "<0");
 
 /*-------------------------------------------------------------------------------------
 
- # CARROUSSEL PROJETS
- 
- -------------------------------------------------------------------------------------*/
-
-const myProjects = gsap.timeline({
-  scrollTrigger: {
-    pin: !0,
-    pinSpacing: !0,
-    scrub: 1,
-    markers: true,
-    start: "top top",
-    end: "bottom top",
-    trigger: ".projects",
-    toggleActions: "play",
-    onEnter: () => animProg.play(),
-  },
-});
-
-const animProg = gsap.timeline({
-  paused: true,
-});
-animProg
-  .fromTo("#projet", { y: 500, opacity: "0%" }, { y: 0, opacity: "100%" }, 0)
-  .fromTo(".swiper", { x: 500, opacity: "0%" }, { x: 0, opacity: "100%" }, ">0")
-  .fromTo(".carroussel", { x: 500 }, { x: 0, duration: 2 }, ">0");
-
-const swiper = new Swiper(".swiper", {
-  direction: "horizontal",
-  loop: true,
-  slidesPerView: 1,
-  spaceBetween: 15,
-  breakpoints: {
-    425: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
-
-/*-------------------------------------------------------------------------------------
-
  # À PROPOS
  
  -------------------------------------------------------------------------------------*/
@@ -147,7 +100,7 @@ const aboutMe = gsap.timeline({
     pinSpacing: 0,
     scrub: 1,
     markers: true,
-    start: "top top",
+    start: "-100px top",
     end: "bottom top",
     trigger: ".about",
     toggleActions: "play",
@@ -194,5 +147,77 @@ animAbout
     ".portrait",
     { x: 500, backgroundPosition: "0% 100%", opacity: "0%" },
     { x: 0, backgroundPosition: "50% 100%", opacity: "100%" },
-    1
+    "<0.2"
   );
+
+/*-------------------------------------------------------------------------------------
+
+ # COMPÉTANCES
+ 
+ -------------------------------------------------------------------------------------*/
+
+const myApps = gsap.timeline({
+  scrollTrigger: {
+    pin: 0,
+    pinSpacing: 0,
+    scrub: 1,
+    markers: true,
+    start: "-100px top",
+    end: "bottom top",
+    trigger: ".competances",
+    toggleActions: "play",
+    onEnter: () => animApp.play(),
+  },
+});
+
+const animApp = gsap.timeline({
+  paused: true,
+});
+animApp.fromTo(".logiciel", { y: "100vh" }, { y: "0", stagger: 0.1 }, ">0.5");
+
+/*-------------------------------------------------------------------------------------
+
+ # CARROUSSEL PROJETS
+ 
+ -------------------------------------------------------------------------------------*/
+
+const myProjects = gsap.timeline({
+  scrollTrigger: {
+    pin: !0,
+    pinSpacing: !0,
+    scrub: 1,
+    markers: true,
+    start: "top top",
+    end: "bottom top",
+    trigger: ".projects",
+    toggleActions: "play",
+    onEnter: () => animProg.play(),
+  },
+});
+
+const animProg = gsap.timeline({
+  paused: true,
+});
+animProg
+  .fromTo("#projet", { y: 500, opacity: "0%" }, { y: 0, opacity: "100%" }, 0)
+  .fromTo(".swiper", { x: 500, opacity: "0%" }, { x: 0, opacity: "100%" }, ">0")
+  .fromTo(".carroussel", { x: 500 }, { x: 0, duration: 2 }, ">0");
+
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 15,
+  breakpoints: {
+    425: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
