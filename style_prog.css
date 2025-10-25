@@ -11,31 +11,36 @@
   align-items: center;
 }
 
-.correct {
-  margin-top: 50px;
-  margin-left: 150px;
-  margin-right: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-  height: 50vh;
+audio {
+  height: 25vh;
 }
 
-.correct .logo-apps {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 0.2fr);
+#paysage {
+  background-image: url(./medias/images/paysagemoodboard.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-#audio h4 a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.5s;
+#son1 {
+  background-image: url(./medias/images/schemasons.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-#audio h4 a:hover {
-  color: var(--gold);
+#son2 {
+  background-image: url(./medias/images/sonReaper.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#son3 {
+  background-image: url(./medias/images/sonInventaire.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
@@ -51,32 +56,12 @@
     width: 100%;
     font-size: 0.9em;
   }
-
-  #audio {
-    overflow-y: visible;
-    justify-content: space-between;
-    margin-top: 50px;
-  }
 }
 
 @media (max-width: 426px) {
-  .correct .logo-apps {
-    grid-template-columns: repeat(2, 0.5fr);
-  }
-
-  .correct .logo-apps .logiciel {
-    width: 40vw;
-  }
-
   p {
     width: 100%;
     font-size: 0.65em;
-  }
-
-  #audio {
-    overflow-y: visible;
-    justify-content: space-between;
-    margin-top: 50px;
   }
 
   audio {
@@ -467,7 +452,7 @@
 #ban3 {
   background-image: url(./medias/images/COLORISATION.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
