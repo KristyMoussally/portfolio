@@ -130,9 +130,11 @@
 }
 
 .top {
+  margin-left: 50px;
+  margin-right: 50px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .photo {
@@ -209,6 +211,8 @@
 @media (min-width: 426px) and (max-width: 768px) {
   .preview {
     grid-template-columns: repeat(2, 0.5fr);
+    align-items: center;
+    display: grid;
   }
 
   #visuel {
@@ -275,7 +279,7 @@
   .preview {
     display: grid;
     grid-template-columns: repeat(1, 0.5fr);
-    gap: 5px;
+    gap: 50px;
     justify-content: center;
     top: 50px;
   }
@@ -353,21 +357,21 @@
 #eco1 {
   background-image: url(https://camo.githubusercontent.com/1f746efe9d1afa2e93d54cdd68a47028000b6d9bac9b4003a5edfaf86617b841/68747470733a2f2f692e6962622e636f2f4a4339596e34522f63617274652e706e67);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 #eco2 {
   background-image: url(./medias/images/eco_3.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
 #eco3 {
   background-image: url(https://camo.githubusercontent.com/7205c8950f8e265925bab1462d48fea3e96ff705ac42a5c3166854830578662b/68747470733a2f2f692e6962622e636f2f7139714c584c362f696d6167652e706e67);
-  background-position: center;
-  background-size: contain;
+  background-position: left;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -461,7 +465,7 @@
 }
 
 #ban3 {
-  background-image: url(./medias/images/MOODBOARD-GÉNÉRIQUE.png);
+  background-image: url(./medias/images/COLORISATION.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -520,15 +524,14 @@ video {
 .ribPreview {
   background-image: url(./medias/images/horse_2.jpg);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 50vw;
+
   transition: background-image 1s, transform 0.5s;
 }
 
 .ribPreview:hover {
   background-image: url(./medias/images/horse_3.jpg);
   background-position: center;
-  background-size: 50vw;
   background-repeat: no-repeat;
 }

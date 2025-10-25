@@ -166,6 +166,31 @@ option {
   align-self: flex-end;
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  .logo {
+    display: block;
+  }
+
+  .burger {
+    width: 8vw;
+  }
+
+  .x {
+    width: 8vw;
+  }
+
+  select {
+    display: none;
+  }
+
+  .Burger {
+    display: block;
+  }
+  .link {
+    display: none;
+  }
+}
+
 @media (max-width: 426px) {
   .logo {
     display: block;
@@ -199,7 +224,7 @@ h1 {
 
 @media (min-width: 426px) and (max-width: 768px) {
   h1 {
-    font-size: 4em;
+    font-size: 3.5em;
     left: 50px;
   }
 }
@@ -375,7 +400,7 @@ h1 {
 }
 
 .art-3 {
-  background-image: url(./medias/images/rendu_finale_01.jpg);
+  background-image: url(./medias/images/horse_2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
