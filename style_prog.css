@@ -157,9 +157,10 @@
 }
 
 .moodboard {
-  width: 90vw;
+  width: 100vw;
   height: 30vh;
   position: relative;
+  top: 15%;
 }
 
 .img-vr {
@@ -217,6 +218,9 @@
     width: 50vw;
   }
 
+  #visuel p {
+    width: 100%;
+  }
   #visuel .logo-apps {
     display: grid;
     width: fit-content;
@@ -233,6 +237,7 @@
 
   .moodboard {
     width: 100%;
+    top: 20%;
   }
 
   .debut {
@@ -289,10 +294,12 @@
   }
 
   #visuel .logo-apps {
-    width: 50%;
+    display: grid;
+    width: fit-content;
     grid-template-columns: repeat(3, 0.05fr);
     gap: 20px;
-    align-self: center;
+    justify-content: center;
+    align-items: center;
   }
 
   #visuel .logiciel {
@@ -310,6 +317,7 @@
 
   .moodboard {
     align-self: center;
+    top: 5%;
   }
 
   .img-vr {
