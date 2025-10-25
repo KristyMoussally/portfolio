@@ -93,9 +93,9 @@
 #visuel {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  height: 250vh;
+  height: 100vh;
 }
 
 .description {
@@ -103,10 +103,14 @@
   margin-left: 150px;
   margin-right: 150px;
   width: 80%;
-  height: 85vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+}
+
+#visuel .logo-apps {
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-rows: repeat(1, 1fr);
 }
 
 .preview {
@@ -116,6 +120,19 @@
   width: 100%;
   align-items: center;
   justify-items: center;
+}
+
+.processus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 150vh;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .photo {
@@ -130,9 +147,9 @@
 }
 
 .debut {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
-  position: relative;
 }
 
 .debut p {
@@ -181,6 +198,15 @@
     grid-template-columns: repeat(2, 0.5fr);
   }
 
+  #visuel {
+    height: 150vh;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
   #visuel p,
   li {
     font-size: 0.95em;
@@ -191,12 +217,18 @@
     width: 50vw;
   }
 
-  .logo-apps {
+  #visuel .logo-apps {
     display: grid;
-    width: 50%;
-    grid-template-columns: repeat(2, 0.05fr);
+    width: fit-content;
+    grid-template-columns: repeat(3, 0.05fr);
     gap: 20px;
     justify-content: center;
+    align-items: center;
+  }
+
+  #visuel .logiciel {
+    background-position: center;
+    width: 30vw;
   }
 
   .moodboard {
@@ -231,6 +263,12 @@
     top: 50px;
   }
 
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
   #visuel p,
   li {
     font-size: 0.95em;
@@ -250,18 +288,27 @@
     width: 100%;
   }
 
+  #visuel .logo-apps {
+    width: 50%;
+    grid-template-columns: repeat(3, 0.05fr);
+    gap: 20px;
+    align-self: center;
+  }
+
+  #visuel .logiciel {
+    background-position: center;
+    width: 30vw;
+  }
+
   .debut p {
     width: 100%;
   }
 
-  .moodboard {
-    align-self: center;
+  #visuel {
+    height: 150vh;
   }
 
-  .logo-apps {
-    width: 50%;
-    grid-template-columns: repeat(3, 0.05fr);
-    gap: 20px;
+  .moodboard {
     align-self: center;
   }
 
