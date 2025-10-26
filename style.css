@@ -58,7 +58,7 @@ section {
   position: relative;
   box-sizing: border-box;
   overflow: hidden;
-  border: red 1px solid;
+  /*border: red 1px solid;*/
 }
 
 h1,
