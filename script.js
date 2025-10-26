@@ -1,14 +1,8 @@
 /*-------------------------------------------------------------------------------------
 
- # MENU BURGER
+ # MENU BURGER + BAR NAVIGATION
  
  -------------------------------------------------------------------------------------*/
-
-const btnBurger = document.querySelector(".burger");
-
-btnBurger.addEventListener("click", () => {
-  btnBurger.classList.toggle("x");
-});
 
 // Va aux pages quand selectionné
 function pageProjet() {
@@ -36,6 +30,23 @@ function pageProjet() {
     default:
       window.location.href = "#";
       break;
+  }
+}
+
+const btnBurger = document.querySelector(".burger");
+const menuNav = document.querySelector(".nav");
+
+btnBurger.addEventListener("click", () => {
+  btnBurger.classList.toggle("x");
+  menuNav.classList.toggle("activeBurger");
+});
+
+function burgerMenuDisplay() {
+  var menuBurger = document.getElementById("list-burger");
+  if (menuBurger.style.display === "block") {
+    menuBurger.style.display = "none";
+  } else {
+    menuBurger.style.display = "block";
   }
 }
 
@@ -209,11 +220,11 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: 1,
   spaceBetween: 15,
   breakpoints: {
-    425: {
+    500: {
       slidesPerView: 1,
       spaceBetween: 20,
     },
-    768: {
+    800: {
       slidesPerView: 2,
     },
     1024: {

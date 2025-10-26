@@ -89,8 +89,8 @@ a:hover {
   display: block;
   top: 0;
   height: 12%;
-  display: grid;
   z-index: 2;
+  transition: height 0.5s;
 }
 
 .list {
@@ -148,6 +148,29 @@ option {
  
  -------------------------------------------------------------------------------------*/
 
+#list-burger {
+  display: none;
+  text-align: center;
+}
+
+#list-burger ul {
+  list-style-type: none;
+}
+
+#list-burger a {
+  text-decoration: none;
+  color: var(--white);
+  transition: color 0.5s;
+}
+
+#list-burger a:hover {
+  color: var(--gold);
+}
+
+.nav.activeBurger {
+  display: none;
+}
+
 .Burger {
   display: none;
 }
@@ -155,7 +178,7 @@ option {
   background-image: url(./medias/images/burger.png);
   background-size: contain;
   background-position: center;
-  width: 15vw;
+  width: 10vw;
   height: 10vh;
   background-repeat: no-repeat;
   align-self: flex-end;
@@ -165,23 +188,28 @@ option {
   background-image: url(./medias/images/x.png);
   background-size: contain;
   background-position: center;
-  width: 15vw;
+  width: 10vw;
   height: 10vh;
   background-repeat: no-repeat;
   align-self: flex-end;
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 800px) {
   .logo {
     display: block;
   }
 
+  .nav.activeBurger {
+    display: block;
+    height: 70%;
+  }
+
   .burger {
-    width: 8vw;
+    width: 7vw;
   }
 
   .x {
-    width: 8vw;
+    width: 6vw;
   }
 
   select {
@@ -196,9 +224,14 @@ option {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 500) {
   .logo {
     display: block;
+  }
+
+  .nav.activeBurger {
+    display: block;
+    height: 70%;
   }
 
   select {
@@ -227,14 +260,14 @@ h1 {
   left: 250px;
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 800px) {
   h1 {
     font-size: 3.5em;
     left: 50px;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 500px) {
   h1 {
     font-size: 1.7em;
     letter-spacing: 0.9rem;
@@ -507,7 +540,7 @@ h1 {
   background-repeat: no-repeat;
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 800px) {
   #titleMe {
     width: fit-content;
   }
@@ -559,7 +592,7 @@ h1 {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 500px) {
   .about {
     display: flex;
     flex-direction: column-reverse;
@@ -728,7 +761,7 @@ h1 {
   background-repeat: no-repeat;
 }
 
-@media (max-width: 426px) and (max-width: 768px) {
+@media (max-width: 500px) and (max-width: 800px) {
   .logo-apps {
     left: 5%;
     width: 50%;
@@ -743,7 +776,7 @@ h1 {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 500px) {
   .logo-apps {
     left: 5%;
     width: 50%;
@@ -822,13 +855,13 @@ footer .footer {
   justify-items: center;
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 800px) {
   .copyright {
     font-size: 0.4em;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 500px) {
   .copyright {
     font-size: 0.4em;
   }

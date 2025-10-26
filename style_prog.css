@@ -46,7 +46,7 @@ audio {
   width: 10vw;
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 800px) {
   #visuel .logo-apps {
     grid-template-columns: repeat(3, 0.5fr);
     align-items: center;
@@ -64,7 +64,7 @@ audio {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 500px) {
   p {
     width: 100%;
     font-size: 0.65em;
@@ -206,7 +206,7 @@ audio {
   color: var(--gold);
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 800px) {
   .preview {
     grid-template-columns: repeat(2, 0.5fr);
     align-items: center;
@@ -256,7 +256,7 @@ audio {
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 500px) {
   .preview {
     display: grid;
     grid-template-columns: repeat(1, 0.5fr);
@@ -442,13 +442,13 @@ video {
   width: 50vw;
 }
 
-@media (min-width: 426px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 800px) {
   video {
     width: 90vw;
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 500px) {
   video {
     width: 80vw;
   }
