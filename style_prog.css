@@ -101,6 +101,10 @@ audio {
   height: 100vh;
 }
 
+ul {
+  padding: 0;
+}
+
 .description {
   position: relative;
   margin-left: 150px;
