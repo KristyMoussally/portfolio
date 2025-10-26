@@ -72,6 +72,10 @@ p {
   line-height: 1.6;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 /*-------------------------------------------------------------------------------------
 
  # BAR DE NAVIGATION
@@ -117,6 +121,7 @@ select {
   font-size: 1.2rem;
   border: 0px;
   transition: color 1s;
+  cursor: pointer;
 }
 
 select:hover {
