@@ -37,7 +37,7 @@ audio {
 }
 
 #visuel .logo-apps {
-  grid-template-columns: repeat(3, 0.1fr);
+  grid-template-columns: repeat(4, 0.1fr);
   grid-template-rows: repeat(1, 1fr);
   align-self: flex-start;
 }
@@ -122,6 +122,7 @@ ul {
   width: 100%;
   align-items: center;
   justify-items: center;
+  top: 90px;
 }
 
 .processus {
@@ -131,12 +132,29 @@ ul {
   height: 150vh;
 }
 
+#processusCreation {
+  overflow-y: visible;
+  height: 250vh;
+}
+
+.processusProjet {
+  top: 70px;
+}
+
 .top {
   margin-left: 50px;
   margin-right: 50px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.gauche {
+  padding: 10px;
+}
+
+.droit {
+  padding: 10px;
 }
 
 .photo {
@@ -226,6 +244,15 @@ ul {
     flex-direction: column;
     justify-content: space-evenly;
   }
+
+  .gauche {
+    padding: 0px;
+  }
+
+  .droit {
+    padding: 0px;
+  }
+
   #visuel p,
   li {
     font-size: 0.95em;
@@ -273,6 +300,14 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+  }
+
+  .gauche {
+    padding: 0px;
+  }
+
+  .droit {
+    padding: 0px;
   }
 
   #visuel p,
@@ -326,7 +361,7 @@ ul {
 }
 
 #eco1 {
-  background-image: url(https://camo.githubusercontent.com/1f746efe9d1afa2e93d54cdd68a47028000b6d9bac9b4003a5edfaf86617b841/68747470733a2f2f692e6962622e636f2f4a4339596e34522f63617274652e706e67);
+  background-image: url(./medias/images/carte.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -373,7 +408,7 @@ ul {
 }
 
 #below1 {
-  background-image: url(./medias/images/whale.png);
+  background-image: url(./medias/images/bts_plains_gauche.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -387,14 +422,35 @@ ul {
 }
 
 #below3 {
-  background-image: url(./medias/images/bts_plains_gauche.png);
+  background-image: url(./medias/images/city_01.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
+#below4 {
+  background-image: url(./medias/images/whale.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#below5 {
+  background-image: url(./medias/images/poisson_test.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#below6 {
+  background-image: url(./medias/images/anguille.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 .belowPreview {
-  background-image: url(./medias/images/city_01.jpg);
+  background-image: url(./medias/images/city.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
