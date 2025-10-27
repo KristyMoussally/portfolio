@@ -520,6 +520,10 @@ h1 {
   grid-template-rows: repeat(1, 1fr);
 }
 
+.social:hover {
+  cursor: pointer;
+}
+
 .social {
   width: 5vw;
   height: 7vh;

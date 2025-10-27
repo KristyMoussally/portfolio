@@ -163,31 +163,6 @@ animAbout
 
 /*-------------------------------------------------------------------------------------
 
- # COMPÉTANCES
- 
- -------------------------------------------------------------------------------------*/
-
-const myApps = gsap.timeline({
-  scrollTrigger: {
-    pin: 0,
-    pinSpacing: 0,
-    scrub: 1,
-    markers: false,
-    start: "-100px top",
-    end: "bottom top",
-    trigger: ".competances",
-    toggleActions: "play",
-    onEnter: () => animApp.play(),
-  },
-});
-
-const animApp = gsap.timeline({
-  paused: true,
-});
-animApp.fromTo(".logiciel", { y: "100vh" }, { y: "0", stagger: 0.1 }, ">0.5");
-
-/*-------------------------------------------------------------------------------------
-
  # CARROUSSEL PROJETS
  
  -------------------------------------------------------------------------------------*/
@@ -232,3 +207,28 @@ const swiper = new Swiper(".swiper", {
     },
   },
 });
+
+/*-------------------------------------------------------------------------------------
+
+ # COMPÉTANCES
+ 
+ -------------------------------------------------------------------------------------*/
+
+const myApps = gsap.timeline({
+  scrollTrigger: {
+    pin: 0,
+    pinSpacing: 0,
+    scrub: 1,
+    markers: false,
+    start: "-100px top",
+    end: "bottom top",
+    trigger: ".competances",
+    toggleActions: "play",
+    onEnter: () => animApp.play(),
+  },
+});
+
+const animApp = gsap.timeline({
+  paused: true,
+});
+animApp.fromTo(".logiciel", { y: "100vh" }, { y: "0", stagger: 0.1 }, ">0.5");
