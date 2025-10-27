@@ -658,13 +658,13 @@ h1 {
  
  -------------------------------------------------------------------------------------*/
 
-.competances {
+.competences {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-#compétance {
+#compétence {
   position: relative;
   letter-spacing: 1rem;
   font-size: 2em;

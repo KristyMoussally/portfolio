@@ -210,7 +210,7 @@ const swiper = new Swiper(".swiper", {
 
 /*-------------------------------------------------------------------------------------
 
- # COMPÉTANCES
+ # COMPÉTENCES
  
  -------------------------------------------------------------------------------------*/
 
@@ -222,7 +222,7 @@ const myApps = gsap.timeline({
     markers: false,
     start: "-100px top",
     end: "bottom top",
-    trigger: ".competances",
+    trigger: ".competences",
     toggleActions: "play",
     onEnter: () => animApp.play(),
   },
