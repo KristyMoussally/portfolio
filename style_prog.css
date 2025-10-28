@@ -528,21 +528,21 @@ video {
 }
 
 #rib1 {
-  background-image: url(./medias/images/horse_1.jpg);
+  background-image: url(./medias/images/bts_horse1.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #rib2 {
-  background-image: url(./medias/images/horse_3.jpg);
+  background-image: url(./medias/images/bts_horse2.png);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
 #rib3 {
-  background-image: url(./medias/images/lampe.png);
+  background-image: url(./medias/images/horse_1.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
