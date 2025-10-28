@@ -673,7 +673,6 @@ h1 {
 
 .logo-apps {
   align-self: center;
-  position: relative;
   width: fit-content;
   display: grid;
   grid-template-columns: repeat(4, 0.18fr);
@@ -797,6 +796,9 @@ h1 {
     align-items: center;
   }
 
+ #compétence {
+    letter-spacing: .7rem;
+  }
   .logiciel {
     width: 20vw;
   }

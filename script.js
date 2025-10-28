@@ -192,18 +192,25 @@ animProg
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
-  slidesPerView: 1,
+  slidesPerView: 2.5,
   spaceBetween: 15,
+  autoplay: {
+    delay: 2500,
+  },
   breakpoints: {
     500: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      autoplay: false,
+      allowSlideNext: false,
     },
     800: {
-      slidesPerView: 2,
+      slidesPerView: 1,
+      allowSlideNext: false,
+      autoplay: false,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 2.5,
+      allowSlideNext: true,
     },
   },
 });
