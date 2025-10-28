@@ -192,7 +192,7 @@ animProg
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
-  slidesPerView: 2.5,
+  slidesPerView: 1,
   spaceBetween: 15,
   autoplay: {
     delay: 2500,
