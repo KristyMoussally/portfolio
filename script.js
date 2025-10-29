@@ -194,23 +194,19 @@ const swiper = new Swiper(".swiper", {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 15,
-  autoplay: {
-    delay: 2500,
-  },
+
   breakpoints: {
     500: {
       slidesPerView: 1,
-      autoplay: false,
+      spaceBetween: 20,
       allowSlideNext: false,
     },
     800: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       allowSlideNext: false,
-      autoplay: false,
     },
     1024: {
-      slidesPerView: 2.5,
-      allowSlideNext: true,
+      slidesPerView: 3,
     },
   },
 });
