@@ -186,26 +186,32 @@ const animProg = gsap.timeline({
 });
 animProg
   .fromTo("#projet", { y: 500, opacity: "0%" }, { y: 0, opacity: "100%" }, 0)
-  .fromTo(".swiper", { x: 500, opacity: "0%" }, { x: 0, opacity: "100%" }, ">0")
-  .fromTo(".carroussel", { x: 500 }, { x: 0, duration: 2 }, ">0");
+  .fromTo(
+    ".swiper",
+    { x: 500, opacity: "0%" },
+    { x: 0, opacity: "100%" },
+    ">0"
+  );
+//.fromTo(".carroussel", { x: 500 }, { x: 0, duration: 2 }, ">0");
 
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
-  loop: true,
+  loop: false,
+  initialSlide: 0,
   slidesPerView: 1,
   spaceBetween: 15,
+  allowSlideNext: true,
   breakpoints: {
     500: {
       slidesPerView: 1,
       spaceBetween: 0,
-      allowSlideNext: false,
     },
     800: {
       slidesPerView: 2,
-      allowSlideNext: false,
     },
     1024: {
       slidesPerView: 3,
+      spaceBetween: 15,
     },
   },
 });

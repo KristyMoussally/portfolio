@@ -346,7 +346,6 @@ h1 {
 
 .swiper {
   display: flex;
-  flex-direction: column;
   align-items: center;
   width: 100%;
 }
@@ -378,8 +377,7 @@ h1 {
 .carroussel {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
 }
 
 .square {
