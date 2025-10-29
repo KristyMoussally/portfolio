@@ -796,8 +796,8 @@ h1 {
     align-items: center;
   }
 
- #compétence {
-    letter-spacing: .7rem;
+  #compétence {
+    letter-spacing: 0.6rem;
   }
   .logiciel {
     width: 20vw;
