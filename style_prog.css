@@ -285,6 +285,10 @@ ul {
   .img-vr {
     width: 90vw;
   }
+
+  h4{
+    text-align: center;
+  }
 }
 
 @media (max-width: 500px) {
@@ -294,6 +298,10 @@ ul {
     gap: 50px;
     justify-content: center;
     top: 50px;
+  }
+
+  h4{
+    text-align: center;
   }
 
   .top {
