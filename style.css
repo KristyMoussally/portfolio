@@ -89,7 +89,7 @@ a:hover {
   display: block;
   top: 0;
   height: 12%;
-  z-index: 2;
+  z-index: 3;
   transition: height 0.5s;
   align-items: center;
 }
