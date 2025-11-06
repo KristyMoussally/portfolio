@@ -597,6 +597,7 @@ h1 {
   .me a {
     width: fit-content;
     height: min-content;
+    display: block;
   }
 }
 
