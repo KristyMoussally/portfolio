@@ -573,6 +573,40 @@ video {
 
 /*-------------------------------------------------------------------------------------
 
+ # Allucita
+ 
+ -------------------------------------------------------------------------------------*/
+
+#allucita {
+  background-image: url(./medias/images/ribmoodboard.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#all1 {
+  background-image: url(./medias/images/bts_horse1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#all2 {
+  background-image: url(./medias/images/visage_1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#all3 {
+  background-image: url(./medias/images/visage_2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*-------------------------------------------------------------------------------------
+
  # Images Interactives
  
  -------------------------------------------------------------------------------------*/
