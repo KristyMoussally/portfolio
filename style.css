@@ -462,6 +462,13 @@ h1 {
   background-repeat: no-repeat;
 }
 
+.art-6 {
+  background-image: url(./medias/images/Titre\ provisoire.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /*-------------------------------------------------------------------------------------
 
  # À PROPOS
