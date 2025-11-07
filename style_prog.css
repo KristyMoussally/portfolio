@@ -194,6 +194,7 @@ ul {
   text-decoration: none;
   color: var(--white);
   font-size: 1.5em;
+  width: 80%;
 }
 
 .img-vr:hover {
@@ -289,6 +290,10 @@ ul {
   h4 {
     text-align: center;
   }
+
+  .aller-prog {
+    width: 90%;
+  }
 }
 
 @media (max-width: 500px) {
@@ -298,6 +303,10 @@ ul {
     gap: 50px;
     justify-content: center;
     top: 50px;
+  }
+
+  .aller-prog {
+    width: 100%;
   }
 
   h4 {
