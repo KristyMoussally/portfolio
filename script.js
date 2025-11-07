@@ -23,6 +23,10 @@ function pageProjet() {
       window.location.href = "./banal.html";
       break;
 
+    case "allucita":
+      window.location.href = "./allucita.html";
+      break;
+
     case "eco6teme":
       window.location.href = "./eco6teme.html";
       break;
